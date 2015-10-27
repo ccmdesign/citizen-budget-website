@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="static/styles/styles.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Signika:400,300,600,700|Signika+Negative:400,300,600,700' rel='stylesheet' type='text/css'/>
+    </head>
+
+    <body>
+        <header>
+            {% block header %}
+                <nav class="b-wrapper">
+                    <a href="" class="e-logo"><b>CITIZEN</b>BUDGET</a>
+
+                    <a href="" class="e-link">About</a>
+                    <a href="" class="e-link">Overview</a>
+                    <a href="" class="e-link">Request a Demo</a>
+                    <a href="" class="e-link">Features</a>
+                    <a href="" class="e-link">Contact</a>
+                </nav>
+            {% endblock %}
+        </header>
+
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+
+        <footer>
+            <div class="b-wrapper">
+                <h2><b>CITIZEN</b>BUDGET</h2>
+
+                <div class="b-one-quarter">
+                    <h3>Sections</h3>
+
+                    <br/><a href="">Features</a>
+                    <br/><a href="">About</a>
+                    <br/><a href="">Testimonials</a>
+                    <br/><a href="">Pricing</a>
+                    <br/><a href="">Who's Using</a>
+                </div>
+
+                <div class="b-one-quarter">
+                    <h3>Demos</h3>
+
+                    <br/><a href="">Investment Budget</a>
+                    <br/><a href="">Utility Fees</a>
+                    <br/><a href="">User Fees and Waste Levies</a>
+                    <br/><a href="">Funding Sources</a>
+                    <br/><a href="">Who's Using</a>
+                </div>
+
+                <div class="b-one-quarter">
+                    <h3>About</h3>
+                </div>
+
+                <div class="b-one-quarter">
+                    <h3>Contact</h3>
+
+                    <br/><span>OpenNorth</span>
+                    <br/><a href="mailto:info@opennort.ca">info@opennort.ca</a>
+                    <br/><span>514 999 9999</span>
+                    <br/><span>4425, Ava Laval.</span>
+                    <br/><span>Montreal, QC</span>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

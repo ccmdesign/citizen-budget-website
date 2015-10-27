@@ -1,0 +1,29 @@
+body > footer {
+    padding: 30px 20px 60px;
+    background-color: #4e4e4e;
+    color: white;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 40px;
+        font-size: 32px;
+        font-weight: 300;
+        text-align: center;
+        color: #393939;
+    }
+
+    .b-one-quarter {
+        display: inline-block;
+        width: 24%;
+        min-width: 235px;
+        margin-bottom: 30px;
+        vertical-align: top;
+    }
+
+    a, span {
+        display: inline-block;
+        margin-bottom: 5px;
+        font-weight: 300;
+        color: #ccc;
+    }
+}

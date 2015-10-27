@@ -1,0 +1,57 @@
+.b-contact {
+    padding: 70px 0;
+
+    h2 {
+        margin-bottom: 70px;
+        text-align: center;
+        color: #2e4582;
+        font-size: 52px;
+    }
+
+    form {
+        max-width: 600px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 5px 15px;
+        border: 0;
+        border-bottom: 1px solid #83c3c8;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    textarea {
+        height: 300px;
+        margin-top: 30px;
+        border: 1px solid #83c3c8;
+        resize: none;
+    }
+
+    textarea:focus, input:focus{
+        outline: 0;
+    }
+
+    input::-webkit-input-placeholder,
+    textarea::-webkit-input-placeholder {
+        color: #2e4582;
+    }
+
+    input:-moz-placeholder, /* Firefox 18- */
+    textarea:-moz-placeholder { /* Firefox 18- */
+        color: #2e4582;
+    }
+
+    input::-moz-placeholder,  /* Firefox 19+ */
+    textarea::-moz-placeholder {  /* Firefox 19+ */
+        color: #2e4582;
+    }
+
+    input:-ms-input-placeholder,
+    textarea:-ms-input-placeholder {
+        color: #2e4582;
+    }
+
+}

@@ -1,0 +1,26 @@
+body > header {
+    padding: 20px;
+    background-color: #2e4286;
+    color: white;
+    text-align: right;
+
+    .e-logo {
+        font-size: 22px;
+        color: white;
+        font-weight: 300;
+        line-height: 1;
+        float: left;
+    }
+
+    .e-link {
+        padding: 5px 10px;
+        margin: 0 5px;
+        font-size: 18px;
+        color: white;
+        font-weight: 300;
+
+        &:hover {
+            background-color: #de6d54;
+        }
+    }
+}
