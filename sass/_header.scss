@@ -1,8 +1,9 @@
-body > header {
+.b-top-nav {
     padding: 20px;
-    background-color: #2e4286;
+    background-color: $blue;
     color: white;
-    text-align: right;
+    text-align: center;
+
 
     .e-logo {
         font-size: 22px;
@@ -13,14 +14,14 @@ body > header {
     }
 
     .e-link {
-        padding: 5px 10px;
-        margin: 0 5px;
+        padding: 5px 25px;
+        margin: 0;
         font-size: 18px;
         color: white;
         font-weight: 300;
 
         &:hover {
-            background-color: #de6d54;
+            background-color: $orange;
         }
     }
 }

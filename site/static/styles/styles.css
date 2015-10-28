@@ -40,29 +40,29 @@ li {
   overflow: hidden;
   text-overflow: ellipsis; }
 
-body > header {
+.b-top-nav {
   padding: 20px;
-  background-color: #2e4286;
+  background-color: #004587;
   color: white;
-  text-align: right; }
-  body > header .e-logo {
+  text-align: center; }
+  .b-top-nav .e-logo {
     font-size: 22px;
     color: white;
     font-weight: 300;
     line-height: 1;
     float: left; }
-  body > header .e-link {
-    padding: 5px 10px;
-    margin: 0 5px;
+  .b-top-nav .e-link {
+    padding: 5px 25px;
+    margin: 0;
     font-size: 18px;
     color: white;
     font-weight: 300; }
-    body > header .e-link:hover {
-      background-color: #de6d54; }
+    .b-top-nav .e-link:hover {
+      background-color: #eb6354; }
 
 body > footer {
   padding: 30px 20px 60px;
-  background-color: #4e4e4e;
+  background-color: #333;
   color: white;
   text-align: center; }
   body > footer h2 {
@@ -70,7 +70,7 @@ body > footer {
     font-size: 32px;
     font-weight: 300;
     text-align: center;
-    color: #393939; }
+    color: rgba(255, 255, 255, 0.1); }
   body > footer .b-one-quarter {
     display: inline-block;
     width: 24%;
@@ -85,7 +85,7 @@ body > footer {
 
 .b-home-section-1 {
   padding: 80px 20px 60px;
-  background-color: #2e4286;
+  background-color: #004587;
   color: white; }
   .b-home-section-1 h1 {
     text-align: center;
@@ -106,14 +106,14 @@ body > footer {
     color: white;
     font-weight: bold;
     font-size: 20px;
-    background-color: #ce6d58; }
+    background-color: #eb6354; }
 
 .b-home-section-2 {
   padding: 30px 20px;
   text-align: center;
   color: white;
   font-size: 32px;
-  background-color: #61a6ad; }
+  background-color: #00abaf; }
 
 .b-home-section-3 {
   padding: 70px 20px;
@@ -121,7 +121,7 @@ body > footer {
   .b-home-section-3 h2 {
     margin-bottom: 70px;
     text-align: center;
-    color: #2e4582;
+    color: #004587;
     font-size: 52px; }
   .b-home-section-3 .b-one-quarter {
     display: inline-block;
@@ -133,7 +133,7 @@ body > footer {
     display: inline-block;
     height: 180px;
     width: 180px;
-    border: 1px solid #2e4582;
+    border: 1px solid #004587;
     border-radius: 50%;
     background-color: white;
     color: #2e4187;
@@ -147,7 +147,7 @@ body > footer {
 .b-home-section-4 {
   padding: 30px 20px;
   text-align: center;
-  background-color: #61a6ad; }
+  background-color: #00abaf; }
   .b-home-section-4 .e-button {
     display: inline-block;
     padding: 10px 50px;
@@ -155,14 +155,14 @@ body > footer {
     color: white;
     font-weight: bold;
     font-size: 20px;
-    background-color: #ce6d58; }
+    background-color: #eb6354; }
 
 .b-home-section-5 {
   padding: 70px 20px; }
   .b-home-section-5 h2 {
     margin-bottom: 70px;
     text-align: center;
-    color: #2e4582;
+    color: #004587;
     font-size: 52px; }
   .b-home-section-5 .b-half {
     display: inline-block;
@@ -176,7 +176,7 @@ body > footer {
 
 .b-home-section-6 {
   padding: 55px 20px;
-  background-color: #61a6ad;
+  background-color: #00abaf;
   text-align: center; }
   .b-home-section-6 .e-testimonial {
     display: inline-block;
@@ -205,7 +205,7 @@ body > footer {
     color: white;
     font-weight: bold;
     font-size: 20px;
-    background-color: #2e4286; }
+    background-color: #004587; }
   .b-home-section-6 .m-center {
     text-align: center; }
 
@@ -214,12 +214,12 @@ body > footer {
   .b-home-section-7 h2 {
     margin-bottom: 70px;
     text-align: center;
-    color: #2e4582;
+    color: #004587;
     font-size: 52px; }
 
 .b-home-section-8 {
   padding: 70px 20px;
-  background-color: #2e4582; }
+  background-color: #004587; }
   .b-home-section-8 h2 {
     margin-bottom: 70px;
     text-align: center;
@@ -241,7 +241,7 @@ body > footer {
     color: white;
     font-weight: bold;
     font-size: 20px;
-    background-color: #ce6d58; }
+    background-color: #eb6354; }
   .b-home-section-8 .m-center {
     text-align: center; }
 
@@ -266,7 +266,7 @@ body > footer {
 
 .b-results-section-2 {
   padding: 55px 20px;
-  background-color: #61a6ad;
+  background-color: #00abaf;
   text-align: center; }
   .b-results-section-2 .e-testimonial {
     display: inline-block;
@@ -327,7 +327,7 @@ body > footer {
   .b-contact h2 {
     margin-bottom: 70px;
     text-align: center;
-    color: #2e4582;
+    color: #004587;
     font-size: 52px; }
   .b-contact form {
     max-width: 600px;
@@ -337,29 +337,29 @@ body > footer {
     width: 100%;
     padding: 5px 15px;
     border: 0;
-    border-bottom: 1px solid #83c3c8;
+    border-bottom: 1px solid #00abaf;
     margin-bottom: 20px;
     font-size: 18px; }
   .b-contact textarea {
     height: 300px;
     margin-top: 30px;
-    border: 1px solid #83c3c8;
+    border: 1px solid #00abaf;
     resize: none; }
   .b-contact textarea:focus, .b-contact input:focus {
     outline: 0; }
   .b-contact input::-webkit-input-placeholder,
   .b-contact textarea::-webkit-input-placeholder {
-    color: #2e4582; }
+    color: #004587; }
   .b-contact input:-moz-placeholder,
   .b-contact textarea:-moz-placeholder {
     /* Firefox 18- */
-    color: #2e4582; }
+    color: #004587; }
   .b-contact input::-moz-placeholder,
   .b-contact textarea::-moz-placeholder {
     /* Firefox 19+ */
-    color: #2e4582; }
+    color: #004587; }
   .b-contact input:-ms-input-placeholder,
   .b-contact textarea:-ms-input-placeholder {
-    color: #2e4582; }
+    color: #004587; }
 
 /*# sourceMappingURL=styles.css.map */

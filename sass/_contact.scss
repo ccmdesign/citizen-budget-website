@@ -4,7 +4,7 @@
     h2 {
         margin-bottom: 70px;
         text-align: center;
-        color: #2e4582;
+        color: $blue;
         font-size: 52px;
     }
 
@@ -18,7 +18,7 @@
         width: 100%;
         padding: 5px 15px;
         border: 0;
-        border-bottom: 1px solid #83c3c8;
+        border-bottom: 1px solid $teal;
         margin-bottom: 20px;
         font-size: 18px;
     }
@@ -26,7 +26,7 @@
     textarea {
         height: 300px;
         margin-top: 30px;
-        border: 1px solid #83c3c8;
+        border: 1px solid $teal;
         resize: none;
     }
 
@@ -36,22 +36,22 @@
 
     input::-webkit-input-placeholder,
     textarea::-webkit-input-placeholder {
-        color: #2e4582;
+        color: $blue;
     }
 
     input:-moz-placeholder, /* Firefox 18- */
     textarea:-moz-placeholder { /* Firefox 18- */
-        color: #2e4582;
+        color: $blue;
     }
 
     input::-moz-placeholder,  /* Firefox 19+ */
     textarea::-moz-placeholder {  /* Firefox 19+ */
-        color: #2e4582;
+        color: $blue;
     }
 
     input:-ms-input-placeholder,
     textarea:-ms-input-placeholder {
-        color: #2e4582;
+        color: $blue;
     }
 
 }

@@ -1,6 +1,6 @@
 body > footer {
     padding: 30px 20px 60px;
-    background-color: #4e4e4e;
+    background-color: $gray;
     color: white;
     text-align: center;
 
@@ -9,7 +9,7 @@ body > footer {
         font-size: 32px;
         font-weight: 300;
         text-align: center;
-        color: #393939;
+        color: $white-10;
     }
 
     .b-one-quarter {

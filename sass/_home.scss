@@ -1,6 +1,6 @@
 .b-home-section-1 {
     padding: 80px 20px 60px;
-    background-color: #2e4286;
+    background-color: $blue;
     color: white;
 
     h1 {
@@ -28,7 +28,7 @@
         color: white;
         font-weight: bold;
         font-size: 20px;
-        background-color: #ce6d58;
+        background-color: $orange;
     }
 }
 
@@ -37,7 +37,7 @@
     text-align: center;
     color: white;
     font-size: 32px;
-    background-color: #61a6ad;
+    background-color: $teal;
 }
 
 .b-home-section-3 {
@@ -47,7 +47,7 @@
     h2 {
         margin-bottom: 70px;
         text-align: center;
-        color: #2e4582;
+        color: $blue;
         font-size: 52px;
     }
 
@@ -63,7 +63,7 @@
         display: inline-block;
         height: 180px;
         width: 180px;
-        border: 1px solid #2e4582;
+        border: 1px solid $blue;
         border-radius: 50%;
         background-color: white;
         color: #2e4187;
@@ -81,7 +81,7 @@
 .b-home-section-4 {
     padding: 30px 20px;
     text-align: center;
-    background-color: #61a6ad;
+    background-color: $teal;
 
     .e-button {
         display: inline-block;
@@ -90,7 +90,7 @@
         color: white;
         font-weight: bold;
         font-size: 20px;
-        background-color: #ce6d58;
+        background-color: $orange;
     }
 }
 
@@ -100,7 +100,7 @@
     h2 {
         margin-bottom: 70px;
         text-align: center;
-        color: #2e4582;
+        color: $blue;
         font-size: 52px;
     }
 
@@ -120,7 +120,7 @@
 
 .b-home-section-6 {
     padding: 55px 20px;
-    background-color: #61a6ad;
+    background-color: $teal;
     text-align: center;
 
     .e-testimonial {
@@ -156,7 +156,7 @@
         color: white;
         font-weight: bold;
         font-size: 20px;
-        background-color: #2e4286;
+        background-color: $blue;
     }
 
     .m-center {
@@ -170,14 +170,14 @@
     h2 {
         margin-bottom: 70px;
         text-align: center;
-        color: #2e4582;
+        color: $blue;
         font-size: 52px;
     }
 }
 
 .b-home-section-8 {
     padding: 70px 20px;
-    background-color: #2e4582;
+    background-color: $blue;
 
     h2 {
         margin-bottom: 70px;
@@ -206,7 +206,7 @@
         color: white;
         font-weight: bold;
         font-size: 20px;
-        background-color: #ce6d58;
+        background-color: $orange;
     }
 
     .m-center {
