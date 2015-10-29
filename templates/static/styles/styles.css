@@ -4,6 +4,9 @@ body {
   padding: 0;
   font-family: "Signika", sans-serif; }
 
+body {
+  background-color: white; }
+
 * {
   box-sizing: border-box; }
 
@@ -18,7 +21,8 @@ td,
 th,
 blockquote {
   margin: 0;
-  font-weight: normal; }
+  font-weight: normal;
+  line-height: 1.5; }
 
 ul,
 li {
@@ -59,23 +63,6 @@ li {
     .b-top-nav .e-link:hover {
       background-color: #eb6354; }
 
-.b-video-bg .b-top-nav {
-  background-color: transparent; }
-
-.b-video-bg {
-  position: relative; }
-  .b-video-bg > video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100vw;
-    min-height: 100vh;
-    z-index: -1;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background-size: cover;
-    background-color: #004587; }
-
 body > footer {
   padding: 30px 20px 60px;
   background-color: #333;
@@ -98,6 +85,76 @@ body > footer {
     margin-bottom: 5px;
     font-weight: 300;
     color: #ccc; }
+
+.b-testimonials {
+  padding: 55px 20px 35px;
+  background-color: #00abaf;
+  text-align: center;
+  overflow-y: hidden;
+  overflow-x: scroll; }
+  .b-testimonials .e-testimonial-list {
+    width: auto;
+    white-space: nowrap;
+    padding: 0; }
+  .b-testimonials .e-testimonial {
+    margin: 0;
+    color: white;
+    vertical-align: top;
+    width: 100vw;
+    display: inline-block;
+    white-space: normal;
+    vertical-align: top;
+    margin-right: auto; }
+    .b-testimonials .e-testimonial .e-picture {
+      width: 200px;
+      height: 200px;
+      border: 3px solid white;
+      border-radius: 50%;
+      margin-right: 60px;
+      vertical-align: middle;
+      float: left; }
+    .b-testimonials .e-testimonial blockquote {
+      text-align: left; }
+    .b-testimonials .e-testimonial p {
+      font-weight: 100;
+      font-size: 21px; }
+    .b-testimonials .e-testimonial cite {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: 300;
+      display: inline-block; }
+    .b-testimonials .e-testimonial .e-action {
+      margin-top: 20px;
+      clear: both; }
+  .b-testimonials .e-button {
+    display: inline-block;
+    padding: 10px 50px;
+    margin: 0 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #004587; }
+  .b-testimonials .m-center {
+    text-align: center; }
+
+.b-video-bg .b-top-nav {
+  background-color: transparent; }
+
+.b-video-bg {
+  position: relative;
+  max-height: 80vh;
+  overflow: hidden; }
+  .b-video-bg > video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100vw;
+    height: auto;
+    z-index: -1;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    background-color: #004587; }
 
 .b-home-section-1 {
   padding: 80px 20px 60px;
@@ -130,21 +187,21 @@ body > footer {
   font-size: 32px;
   background-color: #00abaf; }
 
-.b-home-section-3 {
+.b-overview {
   padding: 70px 20px;
   text-align: center; }
-  .b-home-section-3 h2 {
+  .b-overview h2 {
     margin-bottom: 70px;
     text-align: center;
     color: #004587;
     font-size: 52px; }
-  .b-home-section-3 .b-one-quarter {
+  .b-overview .b-one-quarter {
     display: inline-block;
     width: 235px;
     margin-bottom: 30px;
     vertical-align: top;
     text-align: center; }
-  .b-home-section-3 .e-circle {
+  .b-overview .e-circle {
     display: inline-block;
     height: 180px;
     width: 180px;
@@ -153,7 +210,7 @@ body > footer {
     background-color: white;
     color: #2e4187;
     overflow: hidden; }
-  .b-home-section-3 p {
+  .b-overview p {
     margin-top: 20px;
     text-align: center;
     font-size: 19px;
@@ -172,57 +229,29 @@ body > footer {
     font-size: 20px;
     background-color: #eb6354; }
 
-.b-home-section-5 {
+.b-about-section {
   padding: 70px 20px; }
-  .b-home-section-5 h2 {
-    margin-bottom: 70px;
+  .b-about-section h2 {
+    margin-bottom: 30px;
     text-align: center;
     color: #004587;
     font-size: 52px; }
-  .b-home-section-5 .b-half {
+  .b-about-section h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 100;
+    margin-bottom: 50px; }
+  .b-about-section .b-half {
     display: inline-block;
     width: 49%;
     min-width: 280px;
     vertical-align: top;
     text-align: center; }
-  .b-home-section-5 p {
-    line-height: 25px;
-    color: #666; }
-
-.b-home-section-6 {
-  padding: 55px 20px;
-  background-color: #00abaf;
-  text-align: center; }
-  .b-home-section-6 .e-testimonial {
-    display: inline-block;
-    width: 70%;
-    margin: 0 40px;
-    font-size: 28px;
-    color: white;
-    line-height: 35px;
-    vertical-align: middle; }
-    .b-home-section-6 .e-testimonial cite {
-      margin-top: 20px;
-      font-size: 20px;
-      font-weight: 300; }
-  .b-home-section-6 .e-picture {
-    display: inline-block;
-    width: 200px;
-    height: 200px;
-    margin: 30px 0;
-    border: 3px solid white;
-    border-radius: 50%;
-    vertical-align: middle; }
-  .b-home-section-6 .e-button {
-    display: inline-block;
-    padding: 10px 50px;
-    margin: 0 30px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    background-color: #004587; }
-  .b-home-section-6 .m-center {
-    text-align: center; }
+  .b-about-section p {
+    color: #333;
+    text-align: left;
+    font-weight: 100;
+    font-size: 18px; }
 
 .b-home-section-7 {
   padding: 70px 20px; }

@@ -26,27 +26,3 @@
     }
 }
 
-.b-video-bg .b-top-nav {
-    background-color: transparent;
-}
-
-.b-video-bg {
-    position: relative;
-
-    > video {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        min-width: 100vw;
-        min-height: 100vh;
-        // width: auto;
-        // height: auto;
-        z-index: -1;
-        -webkit-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%);
-        // background: url(polina.jpg) no-repeat;
-        background-size: cover; 
-        background-color: $blue;
-    }
-}
-

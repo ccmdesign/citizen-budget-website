@@ -1,6 +1,28 @@
+.b-video-bg .b-top-nav {
+    background-color: transparent;
+}
+
+.b-video-bg {
+    position: relative;
+    max-height: 80vh;
+    overflow: hidden;
+
+    > video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100vw;
+        height: auto;
+        z-index: -1;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        background-size: cover; 
+        background-color: $blue;
+    }
+}
+
 .b-home-section-1 {
     padding: 80px 20px 60px;
-    // background-color: $blue;
     color: white;
 
     h1 {
@@ -40,9 +62,11 @@
     background-color: $teal;
 }
 
-.b-home-section-3 {
+.b-overview {
     padding: 70px 20px;
     text-align: center;
+
+    > video { }
 
     h2 {
         margin-bottom: 70px;
@@ -94,14 +118,24 @@
     }
 }
 
-.b-home-section-5 {
+.b-about-section {
     padding: 70px 20px;
+    // background-color: $white;
+
+
 
     h2 {
-        margin-bottom: 70px;
+        margin-bottom: 30px;
         text-align: center;
         color: $blue;
         font-size: 52px;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 100;
+        margin-bottom: 50px;
     }
 
     .b-half {
@@ -113,56 +147,14 @@
     }
 
     p {
-        line-height: 25px;
-        color: #666;
+        color: $text-color;
+        text-align: left;
+        font-weight: 100;
+        font-size: 18px;
     }
 }
 
-.b-home-section-6 {
-    padding: 55px 20px;
-    background-color: $teal;
-    text-align: center;
 
-    .e-testimonial {
-        display: inline-block;
-        width: 70%;
-        margin: 0 40px;
-        font-size: 28px;
-        color: white;
-        line-height: 35px;
-        vertical-align: middle;
-
-        cite {
-            margin-top: 20px;
-            font-size: 20px;
-            font-weight: 300;
-        }
-    }
-
-    .e-picture {
-        display: inline-block;
-        width: 200px;
-        height: 200px;
-        margin: 30px 0;
-        border: 3px solid white;
-        border-radius: 50%;
-        vertical-align: middle;
-    }
-
-    .e-button {
-        display: inline-block;
-        padding: 10px 50px;
-        margin: 0 30px;
-        color: white;
-        font-weight: bold;
-        font-size: 20px;
-        background-color: $blue;
-    }
-
-    .m-center {
-        text-align: center;
-    }
-}
 
 .b-home-section-7 {
     padding: 70px 20px;

@@ -2,12 +2,18 @@ $blue: #004587;
 $gray: #333;
 $teal: #00abaf;
 $orange: #eb6354;
+$white: rgba(255,255,255,1);
 $white-10: rgba(255,255,255,.1);
+
+$text-color: #333;
+
+
 
 
 @import "base";
 @import "header";
 @import "footer";
+@import "testimonials";
 
 @import "home";
 @import "results";
