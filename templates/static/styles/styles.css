@@ -42,7 +42,6 @@ li {
 
 .b-top-nav {
   padding: 20px;
-  background-color: #004587;
   color: white;
   text-align: center; }
   .b-top-nav .e-logo {
@@ -59,6 +58,23 @@ li {
     font-weight: 300; }
     .b-top-nav .e-link:hover {
       background-color: #eb6354; }
+
+.b-video-bg .b-top-nav {
+  background-color: transparent; }
+
+.b-video-bg {
+  position: relative; }
+  .b-video-bg > video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: -1;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    background-color: #004587; }
 
 body > footer {
   padding: 30px 20px 60px;
@@ -85,7 +101,6 @@ body > footer {
 
 .b-home-section-1 {
   padding: 80px 20px 60px;
-  background-color: #004587;
   color: white; }
   .b-home-section-1 h1 {
     text-align: center;
