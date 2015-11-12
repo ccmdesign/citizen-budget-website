@@ -1,6 +1,6 @@
 .b-top-nav {
     padding: 20px;
-    // background-color: $blue;
+    background-color: $blue;
     color: white;
     text-align: center;
 
@@ -14,15 +14,13 @@
     }
 
     .e-link {
+        @extend .b-button;
         padding: 5px 25px;
-        margin: 0;
         font-size: 18px;
-        color: white;
-        font-weight: 300;
+        font-weight: 200;
+        letter-spacing: 1px;
+        background-color: transparent;
 
-        &:hover {
-            background-color: $orange;
-        }
+        &:hover { background-color: $orange; }
     }
 }
-

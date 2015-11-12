@@ -1,105 +1,111 @@
-.b-results-section-1 {
-    padding: 100px 20px;
-    background-color: white;
-
-    .b-half {
-        display: inline-block;
-        width: 49%;
-        min-width: 280px;
-        vertical-align: top;
-    }
-
-    h2 {
-        font-size: 52px;
-    }
-
-    h3 {
-        margin: 30px 0;
-        font-size: 30px;
-        font-weight: 300;
-        color: #60a3af;
-    }
-
-    p {
-        line-height: 25px;
-        color: #666;
-    }
+.b-results-section {
+    @extend .b-home-section;
 }
 
-.b-results-section-2 {
-    padding: 55px 20px;
-    background-color: $teal;
-    text-align: center;
 
-    .e-testimonial {
-        display: inline-block;
-        width: 70%;
-        margin: 0 40px;
-        font-size: 28px;
-        color: white;
-        line-height: 35px;
-        vertical-align: middle;
 
-        cite {
-            margin-top: 20px;
-            font-size: 20px;
-            font-weight: 300;
-        }
-    }
+// .b-results-section-1 {
+//     padding: 100px 20px;
+//     background-color: white;
 
-    .e-picture {
-        display: inline-block;
-        width: 200px;
-        height: 200px;
-        margin: 30px 0;
-        border: 3px solid white;
-        border-radius: 50%;
-        vertical-align: middle;
-    }
-}
+//     .b-half {
+//         display: inline-block;
+//         width: 49%;
+//         min-width: 280px;
+//         vertical-align: top;
+//     }
 
-.b-results-section-3 {
-    padding: 100px 20px;
-    background-color: #3c5591;
-    text-align: center;
+//     h2 {
+//         font-size: 52px;
+//     }
 
-    h2 {
-        margin-bottom: 50px;
-        font-size: 52px;
-        color: white;
-        text-align: center;
-    }
+//     h3 {
+//         margin: 30px 0;
+//         font-size: 30px;
+//         font-weight: 300;
+//         color: #60a3af;
+//     }
 
-    .b-one-third {
-        display: inline-block;
-        width: 280px;
-        margin-bottom: 30px;
-        vertical-align: top;
-        text-align: center;
-    }
+//     p {
+//         line-height: 25px;
+//         color: #666;
+//     }
+// }
 
-    .b-one-quarter + h2 {
-        margin-top: 100px;
-    }
+// .b-results-section-2 {
+//     padding: 55px 20px;
+//     background-color: $teal;
+//     text-align: center;
 
-    .e-circle {
-        display: inline-block;
-        height: 245px;
-        width: 245px;
-        border: 3px solid #de6c53;
-        border-radius: 50%;
-        background-color: white;
-        color: #2e4187;
-        overflow: hidden;
+//     .e-testimonial {
+//         display: inline-block;
+//         width: 70%;
+//         margin: 0 40px;
+//         font-size: 28px;
+//         color: white;
+//         line-height: 35px;
+//         vertical-align: middle;
 
-        div {
-            font-size: 80px;
-            margin: 40px 0 20px;
-            text-align: center;
-        }
+//         cite {
+//             margin-top: 20px;
+//             font-size: 20px;
+//             font-weight: 300;
+//         }
+//     }
 
-        p {
-            text-align: center;
-        }
-    }
-}
+//     .e-picture {
+//         display: inline-block;
+//         width: 200px;
+//         height: 200px;
+//         margin: 30px 0;
+//         border: 3px solid white;
+//         border-radius: 50%;
+//         vertical-align: middle;
+//     }
+// }
+
+// .b-results-section-3 {
+//     padding: 100px 20px;
+//     background-color: #3c5591;
+//     text-align: center;
+
+//     h2 {
+//         margin-bottom: 50px;
+//         font-size: 52px;
+//         color: white;
+//         text-align: center;
+//     }
+
+//     .b-one-third {
+//         display: inline-block;
+//         width: 280px;
+//         margin-bottom: 30px;
+//         vertical-align: top;
+//         text-align: center;
+//     }
+
+//     .b-one-quarter + h2 {
+//         margin-top: 100px;
+//     }
+
+//     .e-circle {
+//         display: inline-block;
+//         height: 245px;
+//         width: 245px;
+//         border: 3px solid #de6c53;
+//         border-radius: 50%;
+//         background-color: white;
+//         color: #2e4187;
+//         overflow: hidden;
+
+//         div {
+//             font-size: 80px;
+//             margin: 40px 0 20px;
+//             text-align: center;
+//         }
+
+//         p {
+//             text-align: center;
+//         }
+//     }
+// }

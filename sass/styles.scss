@@ -1,5 +1,5 @@
 $blue: #004587;
-$gray: #333;
+$gray: rgba(0,0,0,0.8);
 $teal: #00abaf;
 $orange: #eb6354;
 $white: rgba(255,255,255,1);
@@ -8,13 +8,25 @@ $white-10: rgba(255,255,255,.1);
 $text-color: #333;
 
 
+@mixin circle {
+    border-radius: 50%;
+    overflow: hidden;
+}
 
 
 @import "base";
-@import "header";
+@import "button";
+@import "top-nav";
+@import "grid";
 @import "footer";
 @import "testimonials";
 
-@import "home";
+@import "home-section";
+@import "home-landing";
+@import "section-divider";
+@import "home-overview";
+@import "home-about";
+@import "home-features";
+@import "home-cities";
+
 @import "results";
-@import "contact";

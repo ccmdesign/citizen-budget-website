@@ -1,8 +1,7 @@
-body > footer {
+.b-footer {
     padding: 30px 20px 60px;
     background-color: $gray;
     color: white;
-    text-align: center;
 
     h2 {
         margin-bottom: 40px;
@@ -12,18 +11,23 @@ body > footer {
         color: $white-10;
     }
 
-    .b-one-quarter {
-        display: inline-block;
-        width: 24%;
-        min-width: 235px;
-        margin-bottom: 30px;
-        vertical-align: top;
+    h3 {
+        margin-bottom: 20px;
+        font-weight: 200;
     }
 
-    a, span {
-        display: inline-block;
-        margin-bottom: 5px;
-        font-weight: 300;
-        color: #ccc;
+    .e-footer-column {
+        padding-right: 20px;
     }
+
+    a,
+    span,
+    p {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: 300;
+        color: darken($white, 50);
+    }
+
+    a:hover { color: $white; }
 }

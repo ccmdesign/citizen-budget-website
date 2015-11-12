@@ -1,90 +1,99 @@
 {% extends "base.html" %}
 
 {% block title %}Results{% endblock %}
-<div class="b-video-bg">
 {% block nav %}
     
 {% endblock %}
 
 {% block content %}
-    <div class="b-video-bg">
-        <video autoplay loop poster="polina.jpg" id="bgvid">
-            <source src="static/videos/home.webm" type="video/webm">
-            {# <source src="polina.mp4" type="video/mp4"> #}
-        </video>
-        <header class="b-top-nav">
-            <nav class="b-wrapper">
-                <a href="" class="e-link">About</a>
-                <a href="" class="e-link">Overview</a>
-                <a href="" class="e-link">Request a Demo</a>
-                <a href="" class="e-link">Features</a>
-                <a href="" class="e-link">Contact</a>
-            </nav>
-        </header>
-        <div class="b-home-section-1">
-            <div class="b-wrapper">
-                <h1><b>CITIZEN</b><br/>BUDGET</h1>
-                
-                <h2>Powerful, data-driven tool that educates and engages citizens in the budget process</h2>
+<header class="b-top-nav">
+    <nav class="b-wrapper">
+        <a href="" class="e-link">Overview</a>
+        <a href="results.html" class="e-link">Results</a>
+        <a href="" class="e-link">Request a Demo</a>
+        <a href="" class="e-link">Features</a>
+        <a href="" class="e-link">Contact</a>
+    </nav>
+</header>
 
-                <div>
-                    <span class="e-button">DEMO <i class="material-icons">arrow_forward</i></span>
-                    <span class="e-button">QUOTE <i class="material-icons">arrow_forward</i></span>
-                </div>
+<section class="b-home-landing b-home-section">
+    <div class="b-wrapper">
+        <h1><b>CITIZEN</b><br/>BUDGET</h1>
+        
+        <h2 class="e-tagline">Powerful, data-driven tool that educates and engages citizens in the budget process</h2>
 
+        <div class="e-controls">
+            <span class="b-button">DEMO <i class="material-icons">arrow_forward</i></span>
+            <span class="b-button">QUOTE <i class="material-icons">arrow_forward</i></span>
+        </div>
+
+    </div>
+</section>
+
+<section class="b-section-divider b-home-section">
+    <h2>Interactive, innovative online budget consultations</h2>
+</section>
+
+<section class="b-overview b-home-section">
+    <div class="b-wrapper">
+        <h2 class="e-section-title">Overview</h2>
+        <div class="e-section-body">
+            <div class="b-one-quarter">
+                <div class="e-circle"></div>
+                <p>Multiple languages</p>
+            </div>
+
+            <div class="b-one-quarter">
+                <div class="e-circle"></div>
+                <p>White label option</p>
+            </div>
+
+            <div class="b-one-quarter">
+                <div class="e-circle"></div>
+                <p>Different types of questions</p>
+            </div>
+
+            <div class="b-one-quarter">
+                <div class="e-circle"></div>
+                <p>Customizable</p>
+            </div>
+
+            <div class="b-one-quarter">
+                <div class="e-circle"></div>
+                <p>Multiple languages</p>
+            </div>
+
+            <div class="b-one-quarter">
+                <div class="e-circle"></div>
+                <p>White label option</p>
+            </div>
+
+            <div class="b-one-quarter">
+                <div class="e-circle"></div>
+                <p>Different types of questions</p>
+            </div>
+
+            <div class="b-one-quarter">
+                <div class="e-circle"></div>
+                <p>Customizable</p>
             </div>
         </div>
     </div>
+</section>
 
-    <div class="b-home-section-2">
-        <div class="b-wrapper">Interactive, innovative online budget consultations</div>
-    </div>
-    <div class="b-video-bg b-overview">
-        <video autoplay loop poster="polina.jpg" id="bgvid">
-            <source src="static/videos/people.webm" type="video/webm">
-            {# <source src="polina.mp4" type="video/mp4"> #}
-        </video>
-        <div class="b-home-section-3">
-            <div class="b-wrapper">
-                <h2>Overview</h2>
-
-                <div class="b-one-quarter">
-                    <div class="e-circle"></div>
-                    <p>Multiple languages</p>
-                </div>
-
-                <div class="b-one-quarter">
-                    <div class="e-circle"></div>
-                    <p>White label option</p>
-                </div>
-
-                <div class="b-one-quarter">
-                    <div class="e-circle"></div>
-                    <p>Different types of questions</p>
-                </div>
-
-                <div class="b-one-quarter">
-                    <div class="e-circle"></div>
-                    <p>Customizable</p>
-                </div>
-            </div>
-        </div>
+    <div class="b-section-divider b-home-section">
+        <div class="b-wrapper"><span class="b-button">SIGNUP FOR A WEBINAR</span></div>
     </div>
 
-    <div class="b-home-section-4">
-        <div class="b-wrapper"><span class="e-button">SIGNUP FOR A WEBINAR</span></div>
-    </div>
-    <div class="b-about-section">
-        <div class="b-home-section-5">
-            <div class="b-wrapper">
-                <h2>About</h2>
-                <h3>Used by over 50 cities - reaching 6 million citizens coast-to-coast</h3>
-
+    <div class="b-about-section b-home-section">
+        <div class="b-wrapper">
+            <h2 class="e-section-title">About</h2>
+            <h3>Used by over 50 cities - reaching 6 million citizens coast-to-coast</h3>
+            <div class="e-section-body">
                 <div class="b-half">
+                    <img class="e-screenshot" src="./static/images/cb-interface.png" alt="">
                 </div>
-
                 <div class="b-half">
-                    
                     <p>Citizen Budget is a product of <a href="http://www.opennorth.ca/" target="_blank">Open North</a> - a non-profit organization dedicated to increasing government transparency on one hand and citizen engagement in the democratic process, on the other. Used successfully by many municipalities and school districts, Citizen Budget is a powerful and innovative tool that helps build community relations, educates residents and gauges residents’ priorities on operating or capital budgets.</p>
                     <p>Unlike a regular survey, Citizen Budget simulator shows the financial impacts in real-time, educating residents about the tradeoffs and constraints faced by their municipality. Unlike budget visualization software, Citizen Budget is an interactive platform that provides a two-way dialogue between you and your community, providing both parties with rich and detailed information. Your residents can conveniently access your Citizen Budget consultation anytime and at their own pace, making it also a clear improvement over public meetings which involve travel, time, childminding and other accessibility constraints.</p>
                 </div>
@@ -92,64 +101,86 @@
         </div>
     </div>
 
-    <div class="b-home-section-6 b-testimonials">
-            <ul class="e-testimonial-list">
-                <li class="e-testimonial">
-                    <blockquote class="b-wrapper">
-                        <div class="e-picture"></div>
-                        <p>Apart from the civic election, no other activity in municipal government has as much impact on the life of our city than the annual budget process. The City of Edmonton strives for an open government where citizen engagement is of paramount importance, and Citizen Budget has helped us advance this goal.</p>
-                        <cite><b>- Jason Darrah,</b> Director of Public Communications, City of Edmonton</cite>
-                    </blockquote>
-                    <div class="e-action"><span class="e-button">View Results</span></div>
-                </li>
-            
-                <li class="e-testimonial">
-                    <blockquote class="b-wrapper">
-                        <div class="e-picture"></div>
-                        <p>Both citizens and elected officials appreciated the outreach and educational aspects of the web application, to better understand the budget and the difficulties in making decisions to achieve a balanced budget. It is no longer a question of spending hundreds of thousands of dollars over 3 years in order for a small select group to vote on how to spend 1 or 2 million dollars.</p>
-                        <cite><b>- Richard Ryan,</b>  Councillor, Plateau Mont-Royal</cite>
-                    </blockquote>
-                    <div class="e-action"><span class="e-button">View Results</span></div>
-                </li>
-            
-                <li class="e-testimonial">
-                    <blockquote class="b-wrapper">
-                        <div class="e-picture"></div>
-                        <p>Prior to implementing the on-line tool, Newmarket conducted paper-based surveys at Town events and various locations including our regional mall. After engaging the services of Open North to prepare a web-based version, participation in the budget survey tripled.</p>
-                        <cite><b>- Cindy Wackett,</b>  Corporate Project Consultant, Town of Newmarket</cite>
-                    </blockquote>
-                    <div class="e-action"><span class="e-button">View Results</span></div>
-                </li>
-            </ul>
+    <div class="b-home-section b-testimonials">
+        <ul class="e-testimonial-list">
+            <li class="e-testimonial">
+                <blockquote class="b-wrapper">
+                    <div class="e-picture" style="background-image:url(./static/images/testimonials/jason-darrah.jpg" alt=""></div>
+                    <p>Apart from the civic election, no other activity in municipal government has as much impact on the life of our city than the annual budget process. The City of Edmonton strives for an open government where citizen engagement is of paramount importance, and Citizen Budget has helped us advance this goal.</p>
+                    <cite><b>- Jason Darrah,</b> Director of Public Communications, City of Edmonton</cite>
+                </blockquote>
+                <div class="e-action">
+                    <span class="b-button">View Results</span>    
+                </div>
+            </li>
+        
+            <li class="e-testimonial">
+                <blockquote class="b-wrapper">
+                    <div class="e-picture" style="background-image:url(./static/images/testimonials/richard-ryan.jpg)" alt="Richard Ryan"></div>
+                    <p>Both citizens and elected officials appreciated the outreach and educational aspects of the web application, to better understand the budget and the difficulties in making decisions to achieve a balanced budget. It is no longer a question of spending hundreds of thousands of dollars over 3 years in order for a small select group to vote on how to spend 1 or 2 million dollars.</p>
+                    <cite><b>- Richard Ryan,</b>  Councillor, Plateau Mont-Royal</cite>
+                </blockquote>
+                <div class="e-action">
+                    <span class="b-button">View Results</span>    
+                </div>
+            </li>
+        
+            <li class="e-testimonial">
+                <blockquote class="b-wrapper">
+                    <div class="e-picture" style="background-image:url(./static/images/testimonials/cindy-wackett.jpg" alt="Cindy Wackett"></div>
+                    <p>Prior to implementing the on-line tool, Newmarket conducted paper-based surveys at Town events and various locations including our regional mall. After engaging the services of Open North to prepare a web-based version, participation in the budget survey tripled.</p>
+                    <cite><b>- Cindy Wackett,</b>  Corporate Project Consultant, Town of Newmarket</cite>
+                </blockquote>
+                <div class="e-action">
+                    <span class="b-button">View Results</span>    
+                </div>
+            </li>
+        </ul>
     </div>
 
-    <div class="b-home-section-7">
-        <div class="b-wrapper">
-            <h2>Who's Using</h2>
+    <div class="b-home-section">
+        <h2 class="e-section-title">Who's Using</h2>
+        <div class="e-section-body b-cities">
+            <ul class="e-cities-wrapper">
+                <li class="e-city"><img src="./static/images/cities/markham.jpg" alt=""></li>
+                <li class="e-city"><img src="./static/images/cities/seattle.jpg" alt=""></li>
+                <li class="e-city"><img src="./static/images/cities/cote-des-neiges.png" alt=""></li>
+                <li class="e-city"><img src="./static/images/cities/edmonton.png" alt=""></li>
+                <li class="e-city"><img src="./static/images/cities/guelph.jpg" alt=""></li>
+                <li class="e-city"><img src="./static/images/cities/jefferson-county-schools.png" alt=""></li>
+                <li class="e-city"><img src="./static/images/cities/saskatoon.png" alt=""></li>
+                <li class="e-city"><img src="./static/images/cities/victoria.png" alt=""></li>
+                <li class="e-city"><img src="./static/images/cities/whitehorse.jpg" alt=""></li>
+                <li class="e-city"><img src="./static/images/cities/baie-saint-paul.jpg" alt=""></li>
+                <li class="e-city"><img src="./static/images/cities/plateau-mont-royal.jpg" alt=""></li>
+                <li class="e-city"><img src="./static/images/cities/kiev-logo.jpg" alt=""></li>
+            </ul>
         </div>
     </div>
 
-    <div class="b-home-section-8">
+    <div class="b-home-section b-home-features">
         <div class="b-wrapper">
-            <h2>Features</h2>
+            <h2 class="e-section-title">Features</h2>
+            <div class="e-section-body">
+                <ul class="b-half">
+                    <li><i class="material-icons">checked</i>A single consultation</li>
+                    <li><i class="material-icons">checked</i>2 rounds of edits</li>
+                    <li><i class="material-icons">checked</i>Custom domain</li>
+                    <li><i class="material-icons">checked</i>Software-as-a-service</li>
+                </ul>
 
-            <ul>
-                <li>A single consultation</li>
-                <li>2 rounds of edits</li>
-                <li>Custom domain</li>
-                <li>Software-as-a-service</li>
-            </ul>
-
-            <ul>
-                <li>Public results page after submission</li>
-                <li>Results report and full access to response data</li>
-                <li>Guidance and support throughout your consultation</li>
-                <li>Validation of Results to avoid repeat submission</li>
-            </ul>
-
-            <div class="m-center">
-                <span class="e-button">GET A QUOTE</span>
+                <ul class="b-half">
+                    <li>
+                        <i class="material-icons">checked</i>Public results page after submission
+                    </li>
+                    <li><i class="material-icons">checked</i>Results report and full access to response data</li>
+                    <li><i class="material-icons">checked</i>Guidance and support throughout your consultation</li>
+                    <li><i class="material-icons">checked</i>Validation of Results to avoid repeat submission</li>
+                </ul>
             </div>
         </div>
     </div>
+    <section class="b-home-section b-section-divider">
+        <span class="b-button">GET A QUOTE</span>
+    </section>
 {% endblock %}

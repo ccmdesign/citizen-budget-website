@@ -1,0 +1,27 @@
+.b-overview {
+    padding: 70px 20px;
+    text-align: center;
+
+    .e-circle {
+        display: inline-block;
+        height: 180px;
+        width: 180px;
+        border: 1px solid $blue;
+        border-radius: 50%;
+        background-color: white;
+        color: #2e4187;
+        overflow: hidden;
+    }
+
+    p {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 19px;
+        color: #2c3c85;
+    }
+
+    .b-one-quarter {
+        margin-bottom: 40px;
+    }
+}
+

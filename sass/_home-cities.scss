@@ -1,0 +1,30 @@
+.b-cities {
+    width: 100%;
+    overflow-x: scroll;
+    
+    .e-cities-wrapper {
+        white-space: nowrap;
+    }
+
+    .e-city {
+        vertical-align: middle;
+        display: inline-block;
+        max-width: 200px;
+        padding: 10px;
+        margin: 0 30px;
+
+
+        > img { 
+            width: 100%; 
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            opacity: .6;
+        }
+
+        &:hover > img {
+            opacity: 1;
+            -webkit-filter: none;
+            filter: none;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.b-home-features {
+    padding: 70px 20px;
+    background-color: $blue;
+
+    .e-section-title { color: white; }
+
+    li {
+        margin-bottom: 15px;
+        color: white;
+        font-size: 18px;
+        font-weight: 200;
+        position: relative;
+        letter-spacing: .5px;
+
+        > i {
+            position: absolute;
+            left: -40px;
+            color: $teal;
+        }
+    }
+}
