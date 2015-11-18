@@ -14,5 +14,11 @@
 }
 
 .b-button:hover {
-    box-shadow: 0 0 8px lighten($gray, 20);
+    box-shadow: 0 0 8px lighten($gray, 40);
+}
+
+.b-button.m-disabled {
+    pointer-events: none;
+    display: none;
+
 }

@@ -4,13 +4,24 @@
 
     .e-circle {
         display: inline-block;
-        height: 180px;
-        width: 180px;
+        height: 120px;
+        width: 120px;
         border: 1px solid $blue;
         border-radius: 50%;
         background-color: white;
         color: #2e4187;
         overflow: hidden;
+        background-size: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        @include transition;
+        box-shadow: 0 0 2px $gray-05;
+
+        &:hover {
+            @include transition;
+            transform: scale(1.2);
+            box-shadow: 0 0 10px $gray-20;
+        }
     }
 
     p {
@@ -20,8 +31,29 @@
         color: #2c3c85;
     }
 
-    .b-one-quarter {
-        margin-bottom: 40px;
+    .b-one-quarter { margin-bottom: 30px; }
+
+
+    .m-pricing              { background-image: url(../images/icons/pricing.png); }
+    .m-modules              { background-image: url(../images/icons/modules.png); }
+    .m-customizable         { background-image: url(../images/icons/customizable.png); }
+    .m-hosting              { background-image: url(../images/icons/cloud.png); }
+    .m-accuracy             { background-image: url(../images/icons/accuracy.png); }
+    .m-branding             { background-image: url(../images/icons/white-label.png); }
+    .m-tracking             { background-image: url(../images/icons/tracking.png); }
+    .m-participant-features { background-image: url(../images/icons/participant.png); }
+    .m-support              { background-image: url(../images/icons/support.png); }
+    .m-demographics         { background-image: url(../images/icons/demographics.png); }
+
+    .m-languages { 
+        background-image: url(../images/icons/languages.png); 
+        background-position: center 10px;
     }
+
+    .m-security { 
+        background-image: url(../images/icons/security.png); 
+        background-position: 4px 5px;
+    }
+
 }
 

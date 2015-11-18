@@ -1,0 +1,33 @@
+.b-graph {
+    text-align: center;
+    padding: 0 56px;
+
+    .e-circle {
+        @include circle;
+        height: 0;
+        width: 100%;
+        padding-bottom: 100%;
+        border: 3px solid $orange;
+        color: $blue;
+
+        .e-graph-data {
+            font-size: 60px;
+            text-align: center;
+            margin-top: 62px;
+
+            .e-percentage { font-size: 0.6em; }
+        }
+    }
+
+    p { margin-top: 20px; }
+}
+
+.b-graphs-section.m-negative {
+    background-color: $blue;
+
+    .e-section-title { color: $white; }
+
+    .e-circle { background-color: $white; }
+
+    p { color: darken($white, 20); }
+}

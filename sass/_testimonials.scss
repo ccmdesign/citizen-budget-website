@@ -1,4 +1,4 @@
-.b-testimonials {
+.b-testimonial-section {
     padding: 55px 20px 35px;
     background-color: $teal;
     text-align: center;
@@ -9,10 +9,10 @@
         width: auto;
         white-space: nowrap;
         padding: 0;
-    }
-
-    .e-testimonial {
-        margin: 20px 0 0;
+    }   
+    
+    .e-testimonial-item {
+        margin: 0;
         color: white;
         vertical-align: top;
         width: 100vw;
@@ -57,5 +57,5 @@
         }
     }
 
-    
 }
+

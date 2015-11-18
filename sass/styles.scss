@@ -1,8 +1,11 @@
 $blue: #004587;
 $gray: rgba(0,0,0,0.8);
+$gray-20: rgba(0,0,0,0.2);
+$gray-05: rgba(0,0,0,0.05);
 $teal: #00abaf;
 $orange: #eb6354;
 $white: rgba(255,255,255,1);
+$white-40: rgba(255,255,255,.4);
 $white-10: rgba(255,255,255,.1);
 
 $text-color: #333;
@@ -13,6 +16,10 @@ $text-color: #333;
     overflow: hidden;
 }
 
+@mixin transition {
+    transition: all 0.4s ease;
+}
+
 
 @import "base";
 @import "button";
@@ -20,8 +27,9 @@ $text-color: #333;
 @import "grid";
 @import "footer";
 @import "testimonials";
+@import "sections";
+@import "graph";
 
-@import "home-section";
 @import "home-landing";
 @import "section-divider";
 @import "home-overview";
@@ -30,3 +38,4 @@ $text-color: #333;
 @import "home-cities";
 
 @import "results";
+@import "contact";
