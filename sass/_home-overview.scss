@@ -4,8 +4,8 @@
 
     .e-circle {
         display: inline-block;
-        height: 120px;
-        width: 120px;
+        height: 140px;
+        width: 140px;
         border: 1px solid $blue;
         border-radius: 50%;
         background-color: white;
@@ -31,19 +31,24 @@
         color: #2c3c85;
     }
 
-    .b-one-quarter { margin-bottom: 30px; }
+    .b-one-third { margin-bottom: 30px; }
 
 
-    .m-pricing              { background-image: url(../images/icons/pricing.png); }
     .m-modules              { background-image: url(../images/icons/modules.png); }
     .m-customizable         { background-image: url(../images/icons/customizable.png); }
     .m-hosting              { background-image: url(../images/icons/cloud.png); }
-    .m-accuracy             { background-image: url(../images/icons/accuracy.png); }
     .m-branding             { background-image: url(../images/icons/white-label.png); }
     .m-tracking             { background-image: url(../images/icons/tracking.png); }
-    .m-participant-features { background-image: url(../images/icons/participant.png); }
     .m-support              { background-image: url(../images/icons/support.png); }
+    .m-responsive           { background-image: url(../images/icons/responsive.png); }
+    .m-accessibility        { background-image: url(../images/icons/accessibility.png); }
+
+
     .m-demographics         { background-image: url(../images/icons/demographics.png); }
+    .m-participant-features { background-image: url(../images/icons/participant.png); }
+    .m-accuracy             { background-image: url(../images/icons/accuracy.png); }
+    .m-pricing              { background-image: url(../images/icons/pricing.png); }
+
 
     .m-languages { 
         background-image: url(../images/icons/languages.png); 

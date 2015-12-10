@@ -51,7 +51,7 @@ li {
 
 .b-button, .b-top-nav .e-link {
   display: inline-block;
-  padding: 10px 40px 10px 50px;
+  padding: 10px 40px 10px 40px;
   color: white;
   font-weight: 400;
   font-size: 20px;
@@ -226,17 +226,17 @@ li {
     color: #cccccc; }
 
 .b-home-landing {
-  padding-top: 120px;
+  padding-top: 180px;
+  padding-bottom: 80px;
   color: white;
   background-color: #004587;
   text-align: center; }
   .b-home-landing h1 {
     text-align: center;
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 300;
     line-height: 1; }
   .b-home-landing .e-tagline {
-    max-width: 435px;
     margin: 30px auto;
     text-align: center;
     font-weight: 300; }
@@ -258,8 +258,8 @@ li {
   text-align: center; }
   .b-overview .e-circle {
     display: inline-block;
-    height: 120px;
-    width: 120px;
+    height: 140px;
+    width: 140px;
     border: 1px solid #004587;
     border-radius: 50%;
     background-color: white;
@@ -279,28 +279,32 @@ li {
     text-align: center;
     font-size: 19px;
     color: #2c3c85; }
-  .b-overview .b-one-quarter {
+  .b-overview .b-one-third {
     margin-bottom: 30px; }
-  .b-overview .m-pricing {
-    background-image: url(../images/icons/pricing.png); }
   .b-overview .m-modules {
     background-image: url(../images/icons/modules.png); }
   .b-overview .m-customizable {
     background-image: url(../images/icons/customizable.png); }
   .b-overview .m-hosting {
     background-image: url(../images/icons/cloud.png); }
-  .b-overview .m-accuracy {
-    background-image: url(../images/icons/accuracy.png); }
   .b-overview .m-branding {
     background-image: url(../images/icons/white-label.png); }
   .b-overview .m-tracking {
     background-image: url(../images/icons/tracking.png); }
-  .b-overview .m-participant-features {
-    background-image: url(../images/icons/participant.png); }
   .b-overview .m-support {
     background-image: url(../images/icons/support.png); }
+  .b-overview .m-responsive {
+    background-image: url(../images/icons/responsive.png); }
+  .b-overview .m-accessibility {
+    background-image: url(../images/icons/accessibility.png); }
   .b-overview .m-demographics {
     background-image: url(../images/icons/demographics.png); }
+  .b-overview .m-participant-features {
+    background-image: url(../images/icons/participant.png); }
+  .b-overview .m-accuracy {
+    background-image: url(../images/icons/accuracy.png); }
+  .b-overview .m-pricing {
+    background-image: url(../images/icons/pricing.png); }
   .b-overview .m-languages {
     background-image: url(../images/icons/languages.png);
     background-position: center 10px; }
@@ -340,9 +344,9 @@ li {
 
 .b-cities {
   width: 100%;
-  overflow-x: scroll; }
+  text-align: center; }
   .b-cities .e-cities-wrapper {
-    white-space: nowrap; }
+    text-align: center; }
   .b-cities .e-city {
     vertical-align: middle;
     display: inline-block;
