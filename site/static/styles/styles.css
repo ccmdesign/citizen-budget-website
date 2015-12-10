@@ -62,7 +62,7 @@ li {
     margin-left: 10px; }
 
 .b-button:hover, .b-top-nav .e-link:hover {
-  box-shadow: 0 0 8px rgba(102, 102, 102, 0.8); }
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4); }
 
 .b-button.m-disabled, .b-top-nav .m-disabled.e-link {
   pointer-events: none;
@@ -70,9 +70,12 @@ li {
 
 .b-top-nav {
   padding: 20px;
-  background-color: #004587;
+  background-color: rgba(0, 69, 135, 0.95);
   color: white;
-  text-align: center; }
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 100; }
   .b-top-nav .e-logo {
     font-size: 22px;
     color: white;
@@ -223,7 +226,7 @@ li {
     color: #cccccc; }
 
 .b-home-landing {
-  padding-top: 80px;
+  padding-top: 120px;
   color: white;
   background-color: #004587;
   text-align: center; }

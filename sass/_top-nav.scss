@@ -1,8 +1,12 @@
 .b-top-nav {
     padding: 20px;
-    background-color: $blue;
+    background-color: $blue-95;
     color: white;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    
 
     .e-logo {
         font-size: 22px;
@@ -25,6 +29,4 @@
 
         &:hover { background-color: $orange; }
     }
-
-
 }
