@@ -18,6 +18,23 @@ $(function() {
 });
 
 
+var $overlay = $('#overlay');
+
+console.log('yo');
+
+$('.js-menu-trigger').click( function() {
+    $('.b-top-nav').addClass('m-active');
+    $overlay.addClass('m-active');
+});
+
+$('.b-top-nav a').click( function() {
+    $('.m-active').removeClass('m-active');
+});
+
+$overlay.click( function() {
+    $('.m-active').removeClass('m-active');
+});
+
 }); // doc.ready
 
 // $('.e-banner-container').slick({
