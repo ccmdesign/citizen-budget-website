@@ -420,18 +420,8 @@ li {
   .b-overview .m-responsive {
     background-image: url(../images/icons/responsive.png); }
   .b-overview .m-accessibility {
-    background-image: url(../images/icons/accessibility.png); }
-  .b-overview .m-demographics {
-    background-image: url(../images/icons/demographics.png); }
-  .b-overview .m-participant-features {
-    background-image: url(../images/icons/participant.png); }
-  .b-overview .m-accuracy {
-    background-image: url(../images/icons/accuracy.png); }
-  .b-overview .m-pricing {
-    background-image: url(../images/icons/pricing.png); }
-  .b-overview .m-languages {
-    background-image: url(../images/icons/languages.png);
-    background-position: center 10px; }
+    background-image: url(../images/icons/accessibility.png);
+    background-position: -3px 8px; }
   .b-overview .m-security {
     background-image: url(../images/icons/security.png);
     background-position: 4px 5px; }
