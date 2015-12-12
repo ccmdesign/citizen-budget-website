@@ -7,6 +7,12 @@
     background-color: $orange;
     cursor: pointer;
 
+    @include breakpoint($mobile-only) {
+        display: block;
+        width: 100%;
+    }
+
+
     > .material-icons {
         vertical-align: -5px;
         margin-left: 10px;
@@ -20,5 +26,4 @@
 .b-button.m-disabled {
     pointer-events: none;
     display: none;
-
 }

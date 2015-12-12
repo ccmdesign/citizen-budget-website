@@ -1,9 +1,11 @@
 .b-home-landing {
     padding-top: 180px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
     color: white;
     background-color: $blue;
     text-align: center;
+
+    @include breakpoint($tablet) { padding-bottom: 80px; }
 
     h1 {
         text-align: center;
@@ -17,9 +19,26 @@
         margin: 30px auto;
         text-align: center;
         font-weight: 300;
+
+        @include breakpoint($mobile-only) { 
+            font-size: 18px;  
+        
+            br { display: none; }
+        }
+        
     }
 
     .e-controls {
-        > .b-button { margin: 20px 20px 0; }
+        > .b-button { 
+            @include breakpoint($mobile-only) { 
+                width: 90%;
+                margin-bottom: 10px;
+            }
+
+            @include breakpoint($tablet) { 
+                width: 240px; 
+                margin: 20px 10px 0;
+            }
+        }
     }
 }

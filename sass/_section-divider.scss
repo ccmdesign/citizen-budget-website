@@ -6,7 +6,11 @@
     background-color: $teal;
 
     h2 {
-        font-size: 30px;
+        font-size: 20px;
         font-weight: 200;
+
+        @include breakpoint($tablet) { 
+            font-size: 30px;
+        }
     }
 }

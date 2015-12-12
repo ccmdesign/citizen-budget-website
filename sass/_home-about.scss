@@ -7,5 +7,9 @@
     .e-screenshot {
         max-width: 90%;
         box-shadow: 2px 2px 8px lighten($gray, 60);
+
+        @include breakpoint($mobile-only) {
+            max-width: 100%;
+        }
     }
 }

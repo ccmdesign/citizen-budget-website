@@ -9,7 +9,11 @@
         font-size: 28px;
     }
 
-    .b-half:nth-of-type(odd) { padding-right: 80px; }
+    .b-half:nth-of-type(odd) { 
+        @include breakpoint($tablet) {
+            padding-right: 80px;
+        }
+    }
 
     li {
         margin-bottom: 15px;
@@ -19,6 +23,10 @@
         position: relative;
         letter-spacing: .5px;
         line-height: 1.5;
+
+        @include breakpoint($touch) {
+            margin-left: 40px;
+        }
 
         > i {
             position: absolute;

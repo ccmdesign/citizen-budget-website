@@ -1,5 +1,9 @@
 .b-page-section {
-    padding: 40px 0;
+    padding: 40px 20px;
+    @include breakpoint($mobile-only) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 
     .e-section-title {
         text-align: center;
@@ -7,7 +11,13 @@
         font-size: 52px;
     }
 
-    .e-section-body { margin: 40px 0; }
+    .e-section-body { 
+        @include breakpoint($mobile-only) {
+            margin: 10px 0;
+        }
+        
+        margin: 40px 0; 
+    }
 }
 
 .b-home-section {
@@ -24,3 +34,5 @@
 .b-results-section {
     @extend .b-page-section;
 }
+
+
