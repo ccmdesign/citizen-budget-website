@@ -1,12 +1,16 @@
 .b-top-nav {
-    padding: 20px;
     background-color: $blue-95;
     color: white;
     text-align: center;
     position: fixed;
     width: 100%;
     z-index: 100;
+    max-height: 59px;
+    // @include transition;
+
+    @include breakpoint($desktop) { padding: 20px; }
     
+
 
     .e-logo {
         font-size: 22px;
@@ -17,6 +21,20 @@
         opacity: .5;
         vertical-align: bottom;
         padding: 5px;
+
+        @include breakpoint($touch) { 
+            display: block; 
+            float: none;
+        }
+    }
+
+    .e-menu-trigger {
+        padding: 15px;
+        display: block;
+        @include transition;
+        transition-delay: .7s;
+
+        @include breakpoint($desktop) { display: none; }
     }
 
     .e-link {
@@ -27,6 +45,42 @@
         letter-spacing: 1px;
         background-color: transparent;
 
+        @include breakpoint($touch) { 
+            display: block;
+            padding: 34px 20px;
+            border-bottom: 1px solid $white-10;
+            background-color: $blue-30k;
+            position: relative;
+            top: -4000px;
+            @include transition;
+        }
+
         &:hover { background-color: $orange; }
     }
+
+    .e-link:nth-child(2) { transition-delay: .6s;}
+    .e-link:nth-child(3) { transition-delay: .5s;}
+    .e-link:nth-child(4) { transition-delay: .4s;}
+    .e-link:nth-child(5) { transition-delay: .3s;}
+    .e-link:nth-child(6) { transition-delay: .2s;}
+    .e-link:nth-child(7) { transition-delay: .1s;}
+}
+
+.b-top-nav.m-active {
+    .e-menu-trigger { 
+        background-color: $blue-30k;
+        @include transition;
+        transition-delay: 0;
+    }
+    .e-link {
+        top: 0;
+        @include transition;
+    }
+    
+    .e-link:nth-child(2) { transition-delay: .1s;}
+    .e-link:nth-child(3) { transition-delay: .2s;}
+    .e-link:nth-child(4) { transition-delay: .3s;}
+    .e-link:nth-child(5) { transition-delay: .4s;}
+    .e-link:nth-child(6) { transition-delay: .5s;}
+    .e-link:nth-child(7) { transition-delay: .6s;}
 }
