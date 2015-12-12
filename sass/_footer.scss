@@ -3,6 +3,9 @@
     background-color: $gray;
     color: white;
 
+    @include breakpoint($tablet) { min-height: 740px; }
+    @include breakpoint($desktop) { min-height: auto; }
+
     h2 {
         margin-bottom: 40px;
         font-size: 32px;
