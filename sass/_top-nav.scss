@@ -6,10 +6,15 @@
     width: 100%;
     z-index: 100;
     max-height: 59px;
-    // @include transition;
+    overflow: hidden;
+    @include transition;
 
     @include breakpoint($desktop) { padding: 20px; }
     
+    &.m-active {
+        max-height: 1000px;
+        @include transition;
+    }
 
 
     .e-logo {
@@ -51,40 +56,40 @@
             border-bottom: 1px solid $white-10;
             background-color: $blue-30k;
             position: relative;
-            top: -4000px;
+            // top: -4000px;
             @include transition;
         }
 
         &:hover { background-color: $orange; }
     }
 
-    @include breakpoint($touch) { 
-        .e-link:nth-child(2) { transition-delay: .6s;}
-        .e-link:nth-child(3) { transition-delay: .5s;}
-        .e-link:nth-child(4) { transition-delay: .4s;}
-        .e-link:nth-child(5) { transition-delay: .3s;}
-        .e-link:nth-child(6) { transition-delay: .2s;}
-        .e-link:nth-child(7) { transition-delay: .1s;}
-    }
+    // @include breakpoint($touch) { 
+    //     .e-link:nth-child(2) { transition-delay: .6s;}
+    //     .e-link:nth-child(3) { transition-delay: .5s;}
+    //     .e-link:nth-child(4) { transition-delay: .4s;}
+    //     .e-link:nth-child(5) { transition-delay: .3s;}
+    //     .e-link:nth-child(6) { transition-delay: .2s;}
+    //     .e-link:nth-child(7) { transition-delay: .1s;}
+    // }
 }
 
 .b-top-nav.m-active {
     .e-menu-trigger { 
         background-color: $blue-30k;
         @include transition;
-        transition-delay: 0;
+        // transition-delay: 0;
     }
     .e-link {
         top: 0;
         @include transition;
     }
 
-    @include breakpoint($touch) { 
-        .e-link:nth-child(2) { transition-delay: .1s;}
-        .e-link:nth-child(3) { transition-delay: .2s;}
-        .e-link:nth-child(4) { transition-delay: .3s;}
-        .e-link:nth-child(5) { transition-delay: .4s;}
-        .e-link:nth-child(6) { transition-delay: .5s;}
-        .e-link:nth-child(7) { transition-delay: .6s;}
-    }
+    // @include breakpoint($touch) { 
+    //     .e-link:nth-child(2) { transition-delay: .1s;}
+    //     .e-link:nth-child(3) { transition-delay: .2s;}
+    //     .e-link:nth-child(4) { transition-delay: .3s;}
+    //     .e-link:nth-child(5) { transition-delay: .4s;}
+    //     .e-link:nth-child(6) { transition-delay: .5s;}
+    //     .e-link:nth-child(7) { transition-delay: .6s;}
+    // }
 }
