@@ -3,11 +3,51 @@
     background-color: $teal;
     text-align: center;
     overflow-y: hidden;
-    overflow-x: scroll;
+    // overflow-x: scroll;
+
+    .slick-arrow {
+        position: absolute;
+        top: 45%;
+        z-index: 1;
+        background-color: transparent;
+        border: 0;
+        @include material-icons;
+        color: transparent;
+        
+        &:focus { outline: 0; }
+
+        &:before,
+        &:after {
+            color: $white_20;
+            font-size: 60px;
+            @include transition;
+        }
+
+        &:hover:before,
+        &:hover:after {
+            color: $white-40;
+            @include transition;
+        }
+    }
+
+    .slick-prev {
+        left: 0;
+
+        &:before {
+            
+            content: 'keyboard_arrow_left'
+        }
+    }
+
+    .slick-next {
+        right: 0;
+
+        &:after {
+            content: 'keyboard_arrow_right'
+        }
+    }
 
     .e-testimonial-list {
-        width: auto;
-        white-space: nowrap;
         padding: 0;
     }   
     

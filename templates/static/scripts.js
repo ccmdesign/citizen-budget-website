@@ -35,28 +35,39 @@ $overlay.click( function() {
     $('.m-active').removeClass('m-active');
 });
 
+$('.e-testimonial-list').slick({
+    // arrows: false,
+    draggable: false,
+    swipeToSlide: true,
+    autoplay: true,
+    responsive: [
+        {
+            breakpoint: 800,
+            settings: {
+                draggable: true,
+            }
+        }
+    ]
+});
+
+$('.m-prev').click(function() {
+    $(this).closest('.e-testimonial-item').slick('slickPrev');
+});
+
+$('.m-next').click(function() {
+    $(this).closest('.e-testimonial-item').slick('slickNext');
+});
+
+
+
+
+
+
+
+
+
+
+
+
 }); // doc.ready
 
-// $('.e-banner-container').slick({
-//     arrows: false,
-//     draggable: false,
-//     swipeToSlide: true,
-//     autoplay: true,
-//     autoplaySpeed: 3000,
-//     responsive: [
-//         {
-//             breakpoint: 800,
-//             settings: {
-//                 draggable: true,
-//             }
-//         }
-//     ]
-// });
-
-// $('.m-prev').click(function() {
-//     $(this).closest('.e-banner-container').slick('slickPrev');
-// });
-
-// $('.m-next').click(function() {
-//     $(this).closest('.e-banner-container').slick('slickNext');
-// });

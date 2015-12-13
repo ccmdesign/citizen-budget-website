@@ -20,6 +20,7 @@ $teal: #00abaf;
 $orange: #eb6354;
 $white: rgba(255,255,255,1);
 $white-40: rgba(255,255,255,.4);
+$white-20: rgba(255,255,255,.2);
 $white-10: rgba(255,255,255,.1);
 
 $text-color: #333;
@@ -32,6 +33,22 @@ $text-color: #333;
 
 @mixin transition {
     transition: all 0.4s ease;
+}
+
+@mixin material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
 }
 
 
