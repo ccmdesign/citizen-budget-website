@@ -14,9 +14,6 @@ body {
 a {
   text-decoration: none; }
 
-:focus {
-  outline: 0; }
-
 p,
 h1,
 h2,
@@ -92,7 +89,7 @@ input {
   display: none; }
 
 .b-top-nav {
-  background-color: rgba(0, 69, 135, 0.95);
+  background-color: rgba(12, 49, 100, 0.95);
   color: white;
   text-align: center;
   position: fixed;
@@ -380,10 +377,24 @@ input {
   padding-bottom: 40px;
   color: white;
   background-color: #004587;
-  text-align: center; }
+  text-align: center;
+  position: relative;
+  overflow: hidden; }
   @media (min-width: 768px) {
     .b-home-landing {
       padding-bottom: 80px; } }
+  .b-home-landing .e-video-bg {
+    position: absolute;
+    top: -20%;
+    left: 0;
+    width: 100%;
+    opacity: .6; }
+    @media (min-width: 1025px) {
+      .b-home-landing .e-video-bg {
+        min-width: 1125px; } }
+  .b-home-landing .e-site-title {
+    position: relative;
+    z-index: 10; }
   .b-home-landing h1 {
     text-align: center;
     font-size: 70px;

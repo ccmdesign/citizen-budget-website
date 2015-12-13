@@ -4,8 +4,25 @@
     color: white;
     background-color: $blue;
     text-align: center;
+    position: relative;
+    overflow: hidden;
 
     @include breakpoint($tablet) { padding-bottom: 80px; }
+
+    .e-video-bg {
+        position: absolute;
+        top: -20%;
+        left: 0;
+        width: 100%;
+        opacity: .6;
+
+        @include breakpoint($desktop) { min-width: 1125px; }
+    }
+
+    .e-site-title {
+        position: relative;
+        z-index: 10;
+    }
 
     h1 {
         text-align: center;
