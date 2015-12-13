@@ -2,6 +2,10 @@
     padding: 70px 20px;
     text-align: center;
 
+    .e-section-row {
+        position: relative;
+    }
+
     .e-circle {
         display: inline-block;
         height: 140px;
@@ -24,6 +28,56 @@
         }
     }
 
+    .e-overview-item.m-active {
+        .e-circle {
+            position: relative;
+            z-index: 10;
+            transform: scale(1.2);
+            box-shadow: 0 5px 15px $gray-30;
+        }
+
+        .e-tooltip { 
+            @include transition;
+            opacity: 1;
+            pointer-events: auto;
+        }
+    }
+
+    .e-tooltip {
+        background-color: $blue;
+        position: absolute;
+        padding: 0;
+        z-index: 1;
+        left: 0;
+        top: 70px;
+        width: 100%;
+
+        box-shadow: 0 5px 15px $gray-30;
+        opacity: 0;
+        pointer-events: none;
+        @include transition;
+
+        h3 {
+            margin: 0;
+            color: $white;
+            padding-top: 100px;
+            padding-bottom: 15px;
+            background-color: $teal;
+        }
+
+        .e-content {
+            padding: 30px;
+        }
+
+        p {
+            text-align: left;
+            color: $white;
+            font-weight: 100;
+        }
+
+        p:only-child { text-align: center; }
+    }
+
     p {
         margin-top: 10px;
         text-align: center;
@@ -32,7 +86,6 @@
     }
 
     .b-one-third { margin-bottom: 30px; }
-
 
     .m-modules              { background-image: url(../images/icons/modules.png); }
     .m-customizable         { background-image: url(../images/icons/customizable.png); }

@@ -434,6 +434,8 @@ input {
 .b-overview {
   padding: 70px 20px;
   text-align: center; }
+  .b-overview .e-section-row {
+    position: relative; }
   .b-overview .e-circle {
     display: inline-block;
     height: 140px;
@@ -452,6 +454,41 @@ input {
       transition: all 0.4s ease;
       transform: scale(1.2);
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+  .b-overview .e-overview-item.m-active .e-circle {
+    position: relative;
+    z-index: 10;
+    transform: scale(1.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); }
+  .b-overview .e-overview-item.m-active .e-tooltip {
+    transition: all 0.4s ease;
+    opacity: 1;
+    pointer-events: auto; }
+  .b-overview .e-tooltip {
+    background-color: #004587;
+    position: absolute;
+    padding: 0;
+    z-index: 1;
+    left: 0;
+    top: 70px;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease; }
+    .b-overview .e-tooltip h3 {
+      margin: 0;
+      color: white;
+      padding-top: 100px;
+      padding-bottom: 15px;
+      background-color: #00abaf; }
+    .b-overview .e-tooltip .e-content {
+      padding: 30px; }
+    .b-overview .e-tooltip p {
+      text-align: left;
+      color: white;
+      font-weight: 100; }
+    .b-overview .e-tooltip p:only-child {
+      text-align: center; }
   .b-overview p {
     margin-top: 10px;
     text-align: center;

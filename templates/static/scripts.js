@@ -30,9 +30,16 @@ $('.b-top-nav a').click( function() {
     $('.m-active').removeClass('m-active');
 });
 
+$('.e-overview-item').click( function() {
+    $(this).addClass('m-active');
+    $overlay.addClass('m-active');
+});
+
 $overlay.click( function() {
     $('.m-active').removeClass('m-active');
 });
+
+
 
 $('.e-testimonial-list').slick({
     draggable: false,
