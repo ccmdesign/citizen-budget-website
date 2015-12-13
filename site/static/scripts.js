@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
 // Smooth Scrolling Function
 $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
@@ -20,8 +21,6 @@ $(function() {
 
 var $overlay = $('#overlay');
 
-console.log('yo');
-
 $('.js-menu-trigger').click( function() {
     $('.b-top-nav').addClass('m-active');
     $overlay.addClass('m-active');
@@ -31,18 +30,24 @@ $('.b-top-nav a').click( function() {
     $('.m-active').removeClass('m-active');
 });
 
+$('.e-overview-item').click( function() {
+    $(this).addClass('m-active');
+    $overlay.addClass('m-active');
+});
+
 $overlay.click( function() {
     $('.m-active').removeClass('m-active');
 });
 
+
+
 $('.e-testimonial-list').slick({
-    // arrows: false,
     draggable: false,
     swipeToSlide: true,
     autoplay: true,
     responsive: [
         {
-            breakpoint: 800,
+            breakpoint: 1000,
             settings: {
                 draggable: true,
             }

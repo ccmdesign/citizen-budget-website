@@ -14,9 +14,6 @@ body {
 a {
   text-decoration: none; }
 
-:focus {
-  outline: 0; }
-
 p,
 h1,
 h2,
@@ -92,7 +89,7 @@ input {
   display: none; }
 
 .b-top-nav {
-  background-color: rgba(0, 69, 135, 0.95);
+  background-color: rgba(12, 49, 100, 0.95);
   color: white;
   text-align: center;
   position: fixed;
@@ -380,10 +377,24 @@ input {
   padding-bottom: 40px;
   color: white;
   background-color: #004587;
-  text-align: center; }
+  text-align: center;
+  position: relative;
+  overflow: hidden; }
   @media (min-width: 768px) {
     .b-home-landing {
       padding-bottom: 80px; } }
+  .b-home-landing .e-video-bg {
+    position: absolute;
+    top: -20%;
+    left: 0;
+    width: 100%;
+    opacity: .6; }
+    @media (min-width: 1025px) {
+      .b-home-landing .e-video-bg {
+        min-width: 1125px; } }
+  .b-home-landing .e-site-title {
+    position: relative;
+    z-index: 10; }
   .b-home-landing h1 {
     text-align: center;
     font-size: 70px;
@@ -423,6 +434,8 @@ input {
 .b-overview {
   padding: 70px 20px;
   text-align: center; }
+  .b-overview .e-section-row {
+    position: relative; }
   .b-overview .e-circle {
     display: inline-block;
     height: 140px;
@@ -441,6 +454,41 @@ input {
       transition: all 0.4s ease;
       transform: scale(1.2);
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+  .b-overview .e-overview-item.m-active .e-circle {
+    position: relative;
+    z-index: 10;
+    transform: scale(1.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); }
+  .b-overview .e-overview-item.m-active .e-tooltip {
+    transition: all 0.4s ease;
+    opacity: 1;
+    pointer-events: auto; }
+  .b-overview .e-tooltip {
+    background-color: #004587;
+    position: absolute;
+    padding: 0;
+    z-index: 1;
+    left: 0;
+    top: 70px;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease; }
+    .b-overview .e-tooltip h3 {
+      margin: 0;
+      color: white;
+      padding-top: 100px;
+      padding-bottom: 15px;
+      background-color: #00abaf; }
+    .b-overview .e-tooltip .e-content {
+      padding: 30px; }
+    .b-overview .e-tooltip p {
+      text-align: left;
+      color: white;
+      font-weight: 100; }
+    .b-overview .e-tooltip p:only-child {
+      text-align: center; }
   .b-overview p {
     margin-top: 10px;
     text-align: center;
