@@ -15,8 +15,12 @@
         left: 0;
         width: 100%;
         opacity: .6;
+        display: none;
 
-        @include breakpoint($desktop) { min-width: 1125px; }
+        @include breakpoint($desktop) { 
+            min-width: 1125px; 
+            display: block;
+        }
     }
 
     .e-site-title {

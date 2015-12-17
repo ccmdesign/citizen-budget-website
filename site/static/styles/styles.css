@@ -365,10 +365,12 @@ input {
     top: -20%;
     left: 0;
     width: 100%;
-    opacity: .6; }
+    opacity: .6;
+    display: none; }
     @media (min-width: 1025px) {
       .b-home-landing .e-video-bg {
-        min-width: 1125px; } }
+        min-width: 1125px;
+        display: block; } }
   .b-home-landing .e-site-title {
     position: relative;
     z-index: 10; }
