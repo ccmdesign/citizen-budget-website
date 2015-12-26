@@ -298,20 +298,21 @@ input {
       .b-testimonial-section .e-testimonial-item .e-action .b-button, .b-testimonial-section .e-testimonial-item .e-action .b-top-nav .e-link, .b-top-nav .b-testimonial-section .e-testimonial-item .e-action .e-link {
         background-color: #004587; }
 
-.b-page-section, .b-home-section, .b-results-section {
+.b-page-section, .b-home-section, .b-results-section, .b-benefits-section {
   padding: 40px 20px; }
   @media (max-width: 767px) {
-    .b-page-section, .b-home-section, .b-results-section {
+    .b-page-section, .b-home-section, .b-results-section, .b-benefits-section {
       padding-top: 10px;
       padding-bottom: 10px; } }
-  .b-page-section .e-section-title, .b-home-section .e-section-title, .b-results-section .e-section-title {
+  .b-page-section .e-section-title, .b-home-section .e-section-title, .b-results-section .e-section-title, .b-benefits-section .e-section-title {
     text-align: center;
     color: #004587;
-    font-size: 52px; }
-  .b-page-section .e-section-body, .b-home-section .e-section-body, .b-results-section .e-section-body {
+    font-size: 52px;
+    padding-top: 20px; }
+  .b-page-section .e-section-body, .b-home-section .e-section-body, .b-results-section .e-section-body, .b-benefits-section .e-section-body {
     margin: 40px 0; }
     @media (max-width: 767px) {
-      .b-page-section .e-section-body, .b-home-section .e-section-body, .b-results-section .e-section-body {
+      .b-page-section .e-section-body, .b-home-section .e-section-body, .b-results-section .e-section-body, .b-benefits-section .e-section-body {
         margin: 10px 0; } }
 
 .b-home-section h3 {
@@ -319,35 +320,6 @@ input {
   font-size: 24px;
   font-weight: 100;
   margin-bottom: 50px; }
-
-.b-graph {
-  text-align: center;
-  padding: 0 56px; }
-  .b-graph .e-circle {
-    border-radius: 50%;
-    overflow: hidden;
-    height: 0;
-    width: 100%;
-    padding-bottom: 100%;
-    border: 3px solid #eb6354;
-    color: #004587; }
-    .b-graph .e-circle .e-graph-data {
-      font-size: 60px;
-      text-align: center;
-      margin-top: 62px; }
-      .b-graph .e-circle .e-graph-data .e-percentage {
-        font-size: 0.6em; }
-  .b-graph p {
-    margin-top: 20px; }
-
-.b-graphs-section.m-negative {
-  background-color: #004587; }
-  .b-graphs-section.m-negative .e-section-title {
-    color: white; }
-  .b-graphs-section.m-negative .e-circle {
-    background-color: white; }
-  .b-graphs-section.m-negative p {
-    color: #cccccc; }
 
 .b-home-landing {
   padding-top: 180px;
@@ -506,18 +478,18 @@ input {
     .b-about-section .e-screenshot {
       max-width: 100%; } }
 
-.b-home-features {
+.b-home-features, .b-benefits-list {
   padding: 70px 20px;
   background-color: #004587; }
-  .b-home-features .e-section-title {
+  .b-home-features .e-section-title, .b-benefits-list .e-section-title {
     color: white; }
-  .b-home-features h3.e-section-title {
+  .b-home-features h3.e-section-title, .b-benefits-list h3.e-section-title {
     color: rgba(255, 255, 255, 0.4);
     font-size: 28px; }
   @media (min-width: 768px) {
-    .b-home-features .b-half:nth-of-type(odd) {
+    .b-home-features .b-half:nth-of-type(odd), .b-benefits-list .b-half:nth-of-type(odd) {
       padding-right: 80px; } }
-  .b-home-features li {
+  .b-home-features li, .b-benefits-list li {
     margin-bottom: 15px;
     color: white;
     font-size: 18px;
@@ -526,9 +498,9 @@ input {
     letter-spacing: .5px;
     line-height: 1.5; }
     @media (max-width: 1024px) {
-      .b-home-features li {
+      .b-home-features li, .b-benefits-list li {
         margin-left: 40px; } }
-    .b-home-features li > i {
+    .b-home-features li > i, .b-benefits-list li > i {
       position: absolute;
       left: -40px;
       color: #00abaf; }
@@ -557,25 +529,43 @@ input {
       -webkit-filter: none;
       filter: none; }
 
-.b-results-landing {
+.b-benefits-landing h2 {
+  text-align: center;
+  color: #004587;
+  font-size: 52px;
+  margin: 30px 0 50px; }
+
+.b-results-landing, .b-benefits-landing {
   padding-top: 90px;
   padding-bottom: 60px; }
-  .b-results-landing .e-city-logo {
-    max-width: 100%;
-    padding-right: 120px; }
-  .b-results-landing .e-header {
-    text-align: left; }
-    .b-results-landing .e-header h2 {
-      font-size: 28px; }
-    .b-results-landing .e-header h3 {
-      font-size: 20px;
-      font-weight: 300; }
-  .b-results-landing .e-header.m-hidden {
-    display: none; }
-  .b-results-landing p {
+  .b-results-landing .e-city-logo, .b-benefits-landing .e-city-logo {
+    text-align: center;
+    padding: 40px 0 60px; }
+    .b-results-landing .e-city-logo figcaption, .b-benefits-landing .e-city-logo figcaption {
+      display: none; }
+  .b-results-landing p, .b-benefits-landing p {
     color: #666;
     font-family: Helvetica,Arial,sans-serif;
-    line-height: 1.6; }
+    line-height: 1.6;
+    margin: 0 15px; }
+
+.b-graph {
+  text-align: center;
+  padding: 60px 56px; }
+  .b-graph:nth-child(2), .b-graph:nth-child(3) {
+    background-color: rgba(0, 0, 0, 0.05); }
+  .b-graph .e-graph-data {
+    font-size: 60px;
+    text-align: center;
+    color: #004587; }
+    .b-graph .e-graph-data .e-percentage {
+      font-size: 0.6em; }
+  .b-graph p {
+    margin-top: 20px;
+    font-size: 20px; }
+  .b-graph.m-text-only p {
+    font-size: 24px;
+    margin: 0; }
 
 .b-contact {
   padding: 70px 0; }
