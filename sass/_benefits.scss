@@ -1,0 +1,14 @@
+.b-benefits-list {
+    @extend .b-home-features;
+}
+
+.b-benefits-landing {
+    @extend .b-results-landing;
+
+    h2 {
+        text-align: center;
+        color: $blue;
+        font-size: 52px;
+        margin: 30px 0 50px;
+    }
+}

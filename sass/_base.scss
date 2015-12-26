@@ -67,7 +67,6 @@ input {
     bottom: 0;
     left: 0;
     right: 0;
-    // background-color: red;
     opacity: .3;
     display: none;
     z-index: 10;
@@ -76,3 +75,12 @@ input {
         display: block;
     }
 }
+
+// .b-fancy-text:first-letter {
+//     font-size: 80px;
+//     float: left;
+//     line-height: 70px;
+//     padding-right: 15px;
+//     font-family: "Signika", sans-serif;
+//     color: $blue;
+// }

@@ -3,27 +3,46 @@
     padding-bottom: 60px;
 
     .e-city-logo {
-        max-width: 100%;
-        padding-right: 120px;
-    }
+        text-align: center;
+        padding: 40px 0 60px;
 
-    .e-header {
-        text-align: left;
-
-        h2 { font-size: 28px; }
-
-        h3 {
-            font-size: 20px;
-            font-weight: 300;
+        figcaption {
+            display: none;
         }
     }
-
-    .e-header.m-hidden { display: none; }
 
     p {
         color: #666;
         font-family: Helvetica,Arial,sans-serif;
         line-height: 1.6;
+        margin: 0 15px;
     }
 }
 
+.b-graph {
+    text-align: center;
+    padding: 60px 56px;
+
+    &:nth-child(2),
+    &:nth-child(3) {
+        background-color: $gray-05;
+    }
+
+    .e-graph-data {
+        font-size: 60px;
+        text-align: center;
+        color: $blue;
+
+        .e-percentage { font-size: 0.6em; }
+    }
+
+    p { 
+        margin-top: 20px; 
+        font-size: 20px;
+    }
+
+    &.m-text-only p {
+        font-size: 24px;
+        margin: 0;
+    }
+}

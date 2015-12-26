@@ -9,6 +9,7 @@
         text-align: center;
         color: $blue;
         font-size: 52px;
+        padding-top: 20px;
     }
 
     .e-section-body { 
@@ -33,6 +34,10 @@
 
 .b-results-section {
     @extend .b-page-section;
+}
+
+.b-benefits-section {
+    @extend .b-page-section;   
 }
 
 
