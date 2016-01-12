@@ -2,6 +2,8 @@
     padding: 70px 20px;
     text-align: center;
 
+    p { font-family: $display-font; }
+
     .e-section-row {
         position: relative;
     }
@@ -73,6 +75,7 @@
             text-align: left;
             color: $white;
             font-weight: 100;
+
         }
 
         p:only-child { text-align: center; }

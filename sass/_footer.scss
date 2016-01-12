@@ -19,8 +19,22 @@
         font-weight: 200;
     }
 
+    p { font-family: $display-font; }
+
     .e-footer-column {
         padding-right: 20px;
+    }
+
+    .e-footer-column.m-sections {
+    @include breakpoint($mobile-only) { display: none; }    
+    }
+
+    .e-footer-column.m-about {
+    @include breakpoint($desktop) { padding-right: 70px; }
+    }
+
+    .e-footer-column.m-contact {
+        @include breakpoint($desktop) { padding-left: 60px; }
     }
 
     a,

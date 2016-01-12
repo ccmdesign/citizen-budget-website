@@ -62,6 +62,10 @@
         vertical-align: top;
         margin-right: auto;
 
+        p {
+            font-family: $display-font;
+        }
+
         @include breakpoint($touch) { margin: 20px 0; }
 
         .e-picture {
