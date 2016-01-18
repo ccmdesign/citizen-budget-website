@@ -487,9 +487,12 @@ input {
     background-image: url(../images/icons/security.png);
     background-position: 4px 5px; }
 
+.b-about-section p {
+  margin-bottom: 15px; }
 .b-about-section .e-screenshot {
   max-width: 90%;
-  box-shadow: 2px 2px 8px rgba(153, 153, 153, 0.8); }
+  box-shadow: 2px 2px 8px rgba(153, 153, 153, 0.8);
+  padding: 10px; }
   @media (max-width: 767px) {
     .b-about-section .e-screenshot {
       max-width: 100%; } }
