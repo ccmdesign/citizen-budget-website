@@ -1,9 +1,12 @@
 .b-about-section {
-    
+    p {
+        margin-bottom: 15px;
+    }
 
     .e-screenshot {
         max-width: 90%;
         box-shadow: 2px 2px 8px lighten($gray, 60);
+        padding: 10px;
 
         @include breakpoint($mobile-only) {
             max-width: 100%;
