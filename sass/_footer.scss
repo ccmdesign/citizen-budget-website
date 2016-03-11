@@ -48,3 +48,13 @@
 
     a:hover { color: $white; }
 }
+
+.b-sponsor {
+    background-color: #006;
+    padding: 10px;
+    text-align: center;
+
+    img {
+        max-width: 200px;
+    }
+}

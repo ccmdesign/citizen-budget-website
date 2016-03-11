@@ -30,9 +30,9 @@ $('.b-top-nav a').click( function() {
     $('.m-active').removeClass('m-active');
 });
 
-$('.e-overview-item').click( function() {
-    $(this).addClass('m-active');
-    $overlay.addClass('m-active');
+$('.e-overview-item').hover( function() {
+    $(this).toggleClass('m-active');
+    // $overlay.addClass('m-active');
 });
 
 $overlay.click( function() {
