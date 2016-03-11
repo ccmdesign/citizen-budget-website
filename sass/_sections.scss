@@ -10,6 +10,7 @@
         color: $blue;
         font-size: 52px;
         padding-top: 20px;
+        margin-bottom: 20px;
     }
 
     .e-section-body { 
@@ -23,6 +24,8 @@
 
 .b-home-section {
     @extend .b-page-section;
+
+
 
     h3 {
         text-align: center;

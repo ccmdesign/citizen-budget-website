@@ -5,17 +5,15 @@
     position: fixed;
     width: 100%;
     z-index: 100;
-    max-height: 59px;
-    overflow: hidden;
+    // max-height: 59px;
+    // overflow: hidden;
     @include transition;
 
-    @include breakpoint($desktop) { padding: 20px; }
     
     &.m-active {
         max-height: 1000px;
         @include transition;
     }
-
 
     .e-logo {
         font-size: 22px;
@@ -23,9 +21,9 @@
         font-weight: 300;
         line-height: 1;
         float: left;
-        opacity: .5;
+        opacity: 1;
         vertical-align: bottom;
-        padding: 5px;
+        padding: 15px 15px 15px 25px;
 
         @include breakpoint($touch) { 
             display: block; 
@@ -44,23 +42,47 @@
 
     .e-link {
         @extend .b-button;
-        padding: 5px 25px;
+        padding: 15px 25px;
         font-size: 18px;
         font-weight: 200;
         letter-spacing: 1px;
+        vertical-align: middle;
         background-color: transparent;
 
         @include breakpoint($touch) { 
             display: block;
             padding: 34px 20px;
             border-bottom: 1px solid $white-10;
-            background-color: $blue-30k;
+            background-color: $blue-95;
             position: relative;
             // top: -4000px;
             @include transition;
         }
 
         &:hover { background-color: $orange; }
+    }
+
+    .m-french {
+        font-size: 14px;
+        margin-left: 40px;
+        color: $white-40;
+    }
+    
+    .m-open-north { 
+        padding: 12px 10px 8px;
+        
+        img { 
+            max-height: 30px; 
+            opacity: .4;
+        }
+
+        &:hover img {
+            opacity: 1;
+        }
+    }
+
+    .e-menu-right {
+        float: right;
     }
 
     // @include breakpoint($touch) { 

@@ -13,4 +13,14 @@
             font-size: 30px;
         }
     }
+
+    h3 {
+        font-size: 24px;
+        font-weight: 200;
+        margin: 0;
+
+        @include breakpoint($tablet) { 
+            font-size: 28px;
+        }
+    }
 }

@@ -12,19 +12,22 @@
     </head>
 
     <body>
-        {% block nav %}
-            <header class="b-top-nav">
-                <nav class="b-wrapper">
-                    <span class="e-menu-trigger js-menu-trigger"><i class="material-icons">menu</i></span>
-                    <a href="./index.html" class="e-logo"><b>CITIZEN</b>BUDGET</a>
-                    <a href="./index.html#about" class="e-link">About</a>
-                    <a href="./index.html#overview" class="e-link">Overview</a>        
-                    <a href="./benefits.html" class="e-link">Benefits</a>
-                    <a href="./index.html#features" class="e-link">Features</a>
-                    <a href="./contact.html" class="e-link">Contact</a>
-                </nav>
-            </header>
-        {% endblock %}
+        <header class="b-top-nav">
+            <nav>
+                <span class="e-menu-trigger js-menu-trigger"><i class="material-icons">menu</i></span>
+                <a href="./index.html" class="e-logo"><b>CITIZEN</b> BUDGET</a>
+                <div class="e-menu-right">
+                    <a href="" class="e-link m-french">Française</a>
+                    <a href="http://www.opennorth.ca/" class="e-link m-open-north"><img src="./static/images/open-north-logo-header.png" alt=""></a>
+                </div>
+                
+                <a href="./index.html#about" class="e-link">About</a>
+                <a href="./index.html#overview" class="e-link">Overview</a>        
+                <a href="./benefits.html" class="e-link">Benefits</a>
+                <a href="./index.html#features" class="e-link">Features</a>
+                <a href="./contact.html" class="e-link">Contact</a>
+            </nav>
+        </header>
 
         <main>
             {% block content %}{% endblock %}
