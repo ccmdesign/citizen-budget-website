@@ -1,0 +1,241 @@
+{% extends "_base-fr.html" %}
+
+{% block nav %}
+<header class="b-top-nav">
+    <nav class="b-wrapper">
+        <span class="e-menu-trigger js-menu-trigger"><i class="material-icons">menu</i></span>
+        <a href="./index.html#about" class="e-link">À propos</a>
+        <a href="./index.html#overview" class="e-link">Résumé</a>        
+        <a href="./benefits.html" class="e-link">Avantages</a>
+        <a href="./index.html#features" class="e-link">Fonctionnalités</a>
+        <a href="./contact.html" class="e-link">Contactez-nous</a>
+
+    </nav>
+</header>
+{% endblock %}
+
+{% block content %}
+
+<section class="b-home-landing b-home-section">
+    <video class="e-video-bg" src="../images/home.webm" autoplay loop></video>
+    <div class="b-wrapper e-site-title">
+        <h1><b>BUDGET </b>CITOYEN</h1>
+        
+        <h2 class="e-tagline">Un puissant simulateur en ligne qui éduque <br>les citoyens et les implique dans le processus budgétaire</h2>
+
+        <div class="e-controls">
+            <a href="./fr/request-demo.html" class="b-button" target="_blank">Demandez une démonstration</a>
+            <!-- <a href="./contact.html" class="b-button">Get a Quote</a> -->
+        </div>
+
+    </div>
+</section>
+
+<section class="b-section-divider b-home-section">
+    <h2>Des consultations budgétaires interactives et innovatrices</h2>
+</section>
+
+<div id="about" class="b-about-section b-home-section">
+    <div class="b-wrapper">
+        <h2 class="e-section-title">À propos</h2>
+        <h3>Un simulateur budgétaire interactif utilisé par plus de 50 municipalités; <br>rejoignant ainsi 6 millions de citoyens, d’un océan à l’autre</h3>
+        <div class="e-section-body">
+            <div class="b-half">
+                <img class="e-screenshot" src="../images/cb-interface.png" alt="">
+            </div>
+
+            <div class="b-half">
+                <p>Budget Citoyen est un produit de <a href="http://www.opennorth.ca/" target="_blank">Nord Ouvert</a> - un organisme à but non lucratif qui se consacre à l’accroissement de la transparence gouvernementale et de l’engagement citoyen dans les processus démocratiques. Employé avec succès par plusieurs municipalités et commissions scolaires, Budget Citoyen est un outil puissant et innovateur qui participe au développement des relations communautaires, qui éduque les citoyens et qui cible leurs priorités quant aux budgets de fonctionnement ou d’immobilisations.</p>
+                <p>Contrairement aux sondages traditionnels ou aux logiciels de visualisation de données budgétaires, Budget Citoyen est une plateforme interactive qui montre en temps réel les impacts financiers des choix des participants, les éduquant ainsi sur les contraintes et compromis auxquels leur municipalité fait face. Budget Citoyen établit un dialogue entre vous et votre communauté, offrant aux deux parties des informations riches et détaillées. Vos citoyens peuvent accéder à votre consultation Budget Citoyen en tout temps et à leur propre rythme, ce qui constitue une nette amélioration par rapport aux réunions publiques, qui comportent quant à elles plusieurs contraintes pour le grand public qui en limitent l’accessibilité telles que le déplacement et la garde des enfants.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="b-testimonial-section b-home-section">
+    
+    <ul class="e-testimonial-list">
+        {% include 'includes/_testimonial-plateau-fr.html' %}
+        {% include 'includes/_testimonial-edmonton-fr.html' %}
+    </ul>
+    
+</div>
+
+<div id="features" class="b-home-section b-home-features">
+    <div class="b-wrapper">
+        <h2 class="e-section-title">Fonctionnalités principales</h2>
+        <div class="e-section-body">
+            <ul class="b-half">
+                <li style="letter-spacing: -0.1px;"><i class="material-icons">checked</i>Un processus d’accueil facile, un guide de démarrage exhaustif, une équipe de soutien dévouée</li>
+                <li><i class="material-icons">checked</i>Une personnalisation complète pour harmoniser la consultation avec la signature visuelle de votre site web corporatif</li>
+                <li style="letter-spacing: -0.1px;"><i class="material-icons">checked</i>L’hébergement sur nos serveurs, incluant la maintenance et les rapports (aucune connaissance technique n’est requise de votre part)</li>
+            </ul>
+            <ul class="b-half">
+                <li><i class="material-icons">checked</i>L’intégration de liens vers votre site web, de documents pdf, de graphiques ou de vidéos</li>
+                <li style="letter-spacing: -0.1px;"><i class="material-icons">checked</i>L’intégration directe des tableaux, vidéos, images et graphiques</li>
+                <li><i class="material-icons">checked</i>Une variété d’outils et widgets pour vous aider à poser vos questions de façon efficace</li>
+                <li><i class="material-icons">checked</i>Des cases commentaires et des questions de sondage pour obtenir une précieuse rétroaction qualitative</li>
+            </ul>
+        </div>
+        <h3 class="e-section-title">Fonctionnalités optionnelles</h3>
+        <div class="e-section-body">
+            <ul class="b-half">
+                <li><i class="material-icons">checked</i>Fonctionnalités personnalisées: tableaux de résumé, énoncés d’impacts, tableau de bord intégré, cartes thermiques, échelles mobiles personnalisées, diagramme circulaire dynamique</li>
+                <li><i class="material-icons">checked</i>Outils et canevas de communication</li>
+            </ul>
+            <ul class="b-half">
+                <li><i class="material-icons">checked</i>Versions traduites de votre consultation budgétaire</li>
+                <li><i class="material-icons">checked</i>Versions imprimées de votre consultation budgétaire pour distribution auprès des citoyens qui n’ont pas accès au web</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="b-home-section b-cities">
+    <h2 class="e-section-title">Clients</h2>
+    <p class="">Plus de 50 clients utilisent Budget Citoyen pour impliquer de façon efficace des millions de résidents dans le processus budgétaire</p>
+    <div class="e-section-body">
+        <ul class="e-cities-wrapper">
+            <li class="e-city"><img src="../images/cities/victoria.png" alt=""></li>
+            <li class="e-city"><img src="../images/cities/markham.jpg" alt=""></li>
+            <li class="e-city"><img src="../images/cities/cote-des-neiges.png" alt=""></li>
+            <li class="e-city"><img src="../images/cities/seattle.jpg" alt=""></li>
+        </ul>
+        <ul class="e-cities-wrapper">
+            <li class="e-city"><img src="../images/cities/jefferson-county-schools.png" alt=""></li>
+            <li class="e-city"><img src="../images/cities/edmonton.png" alt=""></li>
+            <li class="e-city"><img src="../images/cities/saskatoon.png" alt=""></li>
+            <li class="e-city"><img src="../images/cities/london.jpg" alt="" style="max-width: 100px;"></li>
+        </ul>
+    </div>
+</div>
+
+<div class="b-section-divider b-home-section">
+    <div class="b-wrapper"><a href="./contact.html" class="b-button">Contactez-nous</a></div>
+</div>
+
+<section id="overview" class="b-overview b-home-section">
+    <div class="b-wrapper">
+        <h2 class="e-section-title">Résumé</h2>
+
+        <div class="e-section-body">
+            <div class="e-section-row">
+                <div class="b-one-third e-overview-item">
+                    <div class="e-circle m-responsive"></div>
+                    <p>Facile à utiliser sur appareil mobile</p>
+                    <div class="e-tooltip">
+                        <h3>Facile à utiliser sur appareil mobile</h3>
+                        <div class="e-content">
+                            <p>Accessible sur plusieurs types de téléphones intelligents et appareils mobiles</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="b-one-third e-overview-item">
+                    <div class="e-circle m-customizable"></div>
+                    <p>Personnalisable</p>
+                    <div class="e-tooltip">
+                        <h3>Personnalisable</h3>
+                        <div class="e-content">
+                            <p>Plateforme flexible comportant différents modules pour adapter Budget Citoyen à vos besoins</p>
+                            <p>Forfaits de personnalisation pour accroître l’interactivité</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="b-one-third e-overview-item">
+                    <div class="e-circle m-security"></div>
+                    <p>Sécurité</p>
+                    <div class="e-tooltip">
+                        <h3>Sécurité</h3>
+                        <div class="e-content">
+                            <p style="letter-spacing: -0.4px;">Protocoles robustes et exhaustifs, accès autorisé à l’application web Budget Citoyen qui exige l’authentification par mot de passe, progiciels mis à jour quotidiennement pour vous protéger contre les vulnérabilités connues du système</p>
+                            <p>Résidence des données sur vos serveurs une fois la consultation terminée</p>
+                            <p>Possibilité d’offrir des informations aux résidents sur la manière dont leurs réponses seront gérées</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="e-section-row">
+                <div class="b-one-third e-overview-item">
+                    <div class="e-circle m-hosting"></div>
+                    <p>Hébergement</p>
+                    <div class="e-tooltip">
+                        <h3>Hébergement</h3>
+                        <div class="e-content">
+                            <p>Hébergement basé dans le cloud sur des serveurs canadiens ou américains sécuritaires, au besoin, avec une garantie de temps de disponibilité de 99,99%</p>
+                            <p>Sauvegarde, maintenance et transmission des données incluses – aucune connaissance technique requise de votre part</p>
+                            <p>Nom de domaine de votre choix ou sous-domaine de budgetcitoyen.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="b-one-third e-overview-item">
+                    <div class="e-circle m-support"></div>
+                    <p>Soutien à la clientèle</p>
+                    <div class="e-tooltip">
+                        <h3>Soutien à la clientèle</h3>
+                        <div class="e-content">
+                            <p>Approche flexible et réactive axée sur le client</p>
+                            <p>Matériel de soutien exhaustif, incluant les meilleures pratiques, des modèles de textes et des conseils promotionnels</p>
+                            <p>Soutien d’une personne-ressource à toutes les étapes du projet qui mettra sur pied votre consultation Budget Citoyen d’après vos données</p>
+                            <p>Temps de réponse les plus rapides de l’industrie</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="b-one-third e-overview-item">
+                    <div class="e-circle m-modules"></div>
+                    <p>Modules multiples</p>
+                    <div class="e-tooltip">
+                        <h3>Modules multiples</h3>
+                        <div class="e-content">
+                            <p>Nos modules budgétaires hautement innovateurs vous permettent d’impliquer vos résidents de plusieurs façons, notamment en:</p>
+                            <p>Leur lançant le défi d’équilibrer le budget à partir de données réelles</p>
+                            <p>Leur demandant de prioriser les postes budgétaires d’un grand projet d’immobilisation ou de choisir un projet parmi plusieurs propositions</p>
+                            <p>Les éduquant sur les coûts et les impacts fiscaux associés aux diverses dépenses pour les programmes et les services</p>
+                            <p>Leur permettant d’allouer des fonds à leurs projets préférés grâce à la budgétisation participative</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="e-section-row">
+                <div class="b-one-third e-overview-item">
+                    <div class="e-circle m-branding"></div>
+                    <p>Identité visuelle</p>
+                    <div class="e-tooltip">
+                        <h3>Identité visuelle</h3>
+                        <div class="e-content">
+                            <p>Modifiez l’aspect visuel de votre consultation Budget Citoyen afin qu’elle s’intègre parfaitement à l’identité visuelle de votre municipalité dans le but d’offrir un service harmonieux à vos citoyens</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="b-one-third e-overview-item">
+                    <div class="e-circle m-tracking"></div>
+                    <p>Suivi</p>
+                    <div class="e-tooltip">
+                        <h3>Suivi</h3>
+                        <div class="e-content">
+                            <p style="letter-spacing: -0.4px;">Un tableau de bord privé vous permet de suivre les tendances et les données analytiques de votre consultation Budget Citoyen, ainsi que de visualiser un rapport qui regroupe et analyse les réponses quotidiennement. Les résidents peuvent voir comment leurs réponses se comparent à celles de la majorité des citoyens.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="b-one-third e-overview-item">
+                    <div class="e-circle m-accessibility"></div>
+                    <p>Accessibilité</p>
+                    <div class="e-tooltip">
+                        <h3>Accessibilité</h3>
+                        <div class="e-content">
+                            <p>AODA/WCAG 2.0, conforme avec le niveau AA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="b-home-section b-section-divider"></section>
+{% endblock %}

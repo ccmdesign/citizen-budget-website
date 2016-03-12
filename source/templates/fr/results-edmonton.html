@@ -1,0 +1,57 @@
+{% extends "_base-fr.html" %}
+
+
+{% block title %}Results - Edmonton{% endblock %}
+
+{% block content %}
+<div class="b-results-page">
+    <div class="b-results-section b-results-landing">
+        <div class="b-wrapper">
+            <figure class="e-city-logo">
+                <img src="./static/images/cities/edmonton-results.jpg">
+                <figcaption>Edmonton - Alberta</figcaption>
+            </figure>
+            <div class="b-half">
+                <p class="b-fancy-text">Reconnu comme un leader en innovation municipale, tout particulièrement pour ses efforts en matière de communication et de rayonnement, Edmonton a mis sur pied trois consultations Budget Citoyen fort réussies en 2013, 2014 et 2015. En 2014, Edmonton a accompli ce qui pourrait bien être (du moins, au Canada) une première : associer un simulateur budgétaire autonome (Budget Citoyen) et un portail en ligne d’engagement citoyen, permettant de bâtir une communauté dévouée de 3 000 personnes impliquées dans le budget municipal.</p>
+            </div>
+
+            <div class="b-half">
+                <p>Pour son budget 2015, Edmonton a lancé un autre exercice Budget Citoyen, toujours aussi exhaustif et créatif, mais cette fois indépendamment de son portail en ligne. Tirant parti de ses liens communautaires forts développés à la fois en ligne et hors ligne pendant plusieurs années, la municipalité a vu encore une fois des résultats de grande qualité pour sa troisième consultation Budget Citoyen en autant d’années.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-testimonial-section">
+        {% include 'includes/_testimonial-edmonton.html' %}
+    </div>
+
+    <div class="b-results-section b-highlights-section">
+        <div class="b-wrapper">
+            <h2 class="e-section-title">Points saillants</h2>
+            <div class="e-section-body">
+                <div class="b-half b-graph m-text-only">
+                    <p>Les embouteillages et les transports en commun se sont classés en tête des priorités des participants</p>
+                </div>
+
+                <div class="b-half b-graph m-text-only">
+                    <p>Près de la moitié des participants aimeraient que la Ville se concentre sur des mesures permettant d’améliorer l’efficacité afin de pouvoir réduire les coûts</p>
+                </div>
+
+                <div class="b-half b-graph">
+                    <div class="e-circle">
+                        <div class="e-graph-data">35<span class="e-percentage">%</span></div>
+                    </div>
+                    <p>Près de 35% des participants s’opposent à une augmentation des impôts fonciers</p>
+                </div>
+
+                <div class="b-half b-graph">
+                    <div class="e-circle">
+                        <div class="e-graph-data">74<span class="e-percentage">%</span></div>
+                    </div>
+                    <p>74% des participants se sont dits satisfaits ou très satisfaits de la qualité des services municipaux</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+{% endblock %}
