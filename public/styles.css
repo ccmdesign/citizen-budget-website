@@ -164,6 +164,7 @@ input {
 .b-top-nav.m-active .e-menu-trigger {
   background-color: #0c3164;
   transition: all 0.4s ease; }
+
 .b-top-nav.m-active .e-link {
   top: 0;
   transition: all 0.4s ease; }
@@ -278,11 +279,11 @@ input {
   .b-testimonial-section .slick-prev {
     left: 0; }
     .b-testimonial-section .slick-prev:before {
-      content: "keyboard_arrow_left"; }
+      content: 'keyboard_arrow_left'; }
   .b-testimonial-section .slick-next {
     right: 0; }
     .b-testimonial-section .slick-next:after {
-      content: "keyboard_arrow_right"; }
+      content: 'keyboard_arrow_right'; }
   .b-testimonial-section .e-testimonial-list {
     padding: 0; }
   .b-testimonial-section .e-testimonial-item {
@@ -530,6 +531,7 @@ input {
 
 .b-about-section p {
   margin-bottom: 15px; }
+
 .b-about-section .e-screenshot {
   max-width: 90%;
   box-shadow: 2px 2px 8px rgba(153, 153, 153, 0.8);
@@ -597,6 +599,7 @@ input {
   @media (min-width: 1025px) {
     .b-benefits-landing h2 {
       margin-top: 60px; } }
+
 .b-benefits-landing .e-tagline {
   font-size: 22px;
   text-align: center;
@@ -604,9 +607,11 @@ input {
   @media (min-width: 1025px) {
     .b-benefits-landing .e-tagline {
       margin-bottom: 80px; } }
+
 @media (min-width: 1025px) {
   .b-benefits-landing .m-divider {
     margin-top: 80px; } }
+
 .b-benefits-landing blockquote {
   text-align: left;
   font-size: 32px;
@@ -616,6 +621,7 @@ input {
   @media (max-width: 767px) {
     .b-benefits-landing blockquote br {
       display: none; } }
+
 .b-benefits-landing .e-graph {
   margin: 20px auto 0;
   border-radius: 50%;
@@ -733,5 +739,3 @@ input {
   .b-contact textarea:-ms-input-placeholder {
     color: #004587;
     font-family: "Signika", sans-serif; }
-
-/*# sourceMappingURL=styles.css.map */

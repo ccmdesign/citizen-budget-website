@@ -4,9 +4,9 @@
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>{% block title %}Citizen Budget{% endblock %}</title>
-        <link rel="stylesheet" href="static/assets/slick.css"/>
-        <link rel="stylesheet" href="static/styles/styles.css"/>
+        <title>Request a Demo</title>
+        <link rel="stylesheet" href="vendor/slick.css"/>
+        <link rel="stylesheet" href="styles.css"/>
         <link href='https://fonts.googleapis.com/css?family=Signika:400,300,600,700|Signika+Negative:400,300,600,700' rel='stylesheet' type='text/css'/>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
@@ -18,7 +18,7 @@
                 <a href="./index.html" class="e-logo"><b>CITIZEN</b> BUDGET</a>
                 <div class="e-menu-right">
                     <a href="" class="e-link m-french">Française</a>
-                    <a href="http://www.opennorth.ca/" class="e-link m-open-north"><img src="./static/images/open-north-logo-header.png" alt=""></a>
+                    <a href="http://www.opennorth.ca/" class="e-link m-open-north"><img src="images/open-north-logo-header.png" alt=""></a>
                 </div>
                 
                 <a href="./index.html#about" class="e-link">About</a>
@@ -30,7 +30,26 @@
         </header>
 
         <main>
-            {% block content %}{% endblock %}
+            
+    <div class="b-contact">
+        <div class="b-wrapper">
+            <h2>Request a Demo</h2>
+            <h3>1-888-750-4980</h3>
+            <p>We would be happy to provide you with a quote or schedule a demo for you and your team. Our webinars are done over the phone and internet with a screen sharing software so that you and your team can follow along together or from separate locations.</p>
+            <p>In 30-60 minutes you’ll learn how Citizen Budget’s innovative technology and features can significantly boost your budget consultations and also have all your questions answered. </p>
+            <p>Naturally, there is no obligation to purchase Citizen Budget after a webinar and definitely no annoying spam to follow.</p>
+
+            <form>
+                <input type="text" name="name" placeholder="Name*" required/>
+                <input type="email" name="email" placeholder="Email*" required/>
+                <input type="text" name="phone" placeholder="Phone"/>
+                <input type="text" name="organization" placeholder="Organization"/>
+                <textarea name="message" placeholder="Message"></textarea>
+                <input type="submit" class="b-button" value="Send">
+            </form>
+        </div>
+    </div>
+
         </main>
 
         <footer class="b-footer">
@@ -64,11 +83,11 @@
             </div>
         </footer>
         <div class="b-sponsor">
-            <img src="static/images/quebec-gov-logo.png" alt="Government of Quebec">
+            <img src="images/quebec-gov-logo.png" alt="Government of Quebec">
         </div>
         <div id="overlay"></div>
-        <script src="./static/assets/jquery-2.1.4.min.js"></script>
-        <script src="./static/assets/slick.min.js"></script>
-        <script src="./static/scripts.js"></script>
+        <script src="./vendor/jquery-2.1.4.min.js"></script>
+        <script src="./vendor/slick.min.js"></script>
+        <script src="./scripts.js"></script>
     </body>
 </html>
