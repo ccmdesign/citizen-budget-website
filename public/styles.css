@@ -509,19 +509,19 @@ input {
   .b-overview .b-one-third {
     margin-bottom: 30px; }
   .b-overview .m-modules {
-    background-image: url(../images/icons/modules.png); }
+    background-image: url(images/icons/modules.png); }
   .b-overview .m-customizable {
-    background-image: url(../images/icons/customizable.png); }
+    background-image: url(images/icons/customizable.png); }
   .b-overview .m-hosting {
-    background-image: url(../images/icons/cloud.png); }
+    background-image: url(images/icons/cloud.png); }
   .b-overview .m-branding {
-    background-image: url(../images/icons/white-label.png); }
+    background-image: url(images/icons/white-label.png); }
   .b-overview .m-tracking {
-    background-image: url(../images/icons/tracking.png); }
+    background-image: url(images/icons/tracking.png); }
   .b-overview .m-support {
-    background-image: url(../images/icons/support.png); }
+    background-image: url(images/icons/support.png); }
   .b-overview .m-responsive {
-    background-image: url(../images/icons/responsive.png); }
+    background-image: url(images/icons/responsive.png); }
   .b-overview .m-accessibility {
     background-image: url(../images/icons/accessibility.png);
     background-position: -3px 8px; }
