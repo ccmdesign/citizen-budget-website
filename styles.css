@@ -523,10 +523,10 @@ input {
   .b-overview .m-responsive {
     background-image: url(images/icons/responsive.png); }
   .b-overview .m-accessibility {
-    background-image: url(../images/icons/accessibility.png);
+    background-image: url(images/icons/accessibility.png);
     background-position: -3px 8px; }
   .b-overview .m-security {
-    background-image: url(../images/icons/security.png);
+    background-image: url(images/icons/security.png);
     background-position: 4px 5px; }
 
 .b-about-section p {
