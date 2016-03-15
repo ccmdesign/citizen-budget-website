@@ -45,6 +45,7 @@ $('.e-testimonial-list').slick({
     draggable: false,
     swipeToSlide: true,
     autoplay: true,
+    autoplaySpeed: 5000,
     responsive: [
         {
             breakpoint: 1000,

@@ -101,7 +101,7 @@ input {
 .b-top-nav {
   background-color: rgba(12, 49, 100, 0.95);
   color: white;
-  text-align: center;
+  text-align: right;
   position: fixed;
   width: 100%;
   z-index: 100;
@@ -136,7 +136,8 @@ input {
     font-weight: 200;
     letter-spacing: 1px;
     vertical-align: middle;
-    background-color: transparent; }
+    background-color: transparent;
+    cursor: pointer; }
     @media (max-width: 1024px) {
       .b-top-nav .e-link {
         display: block;
@@ -151,8 +152,12 @@ input {
     font-size: 14px;
     margin-left: 40px;
     color: rgba(255, 255, 255, 0.4); }
+    .b-top-nav .m-french:hover {
+      color: white; }
   .b-top-nav .m-open-north {
-    padding: 12px 10px 8px; }
+    padding: 12px 10px 8px;
+    margin-right: 20px;
+    overflow: hidden; }
     .b-top-nav .m-open-north img {
       max-height: 30px;
       opacity: .4; }
@@ -249,7 +254,7 @@ input {
   overflow-y: hidden; }
   .b-testimonial-section .slick-arrow {
     position: absolute;
-    top: 45%;
+    top: 28%;
     z-index: 1;
     background-color: transparent;
     border: 0;
@@ -271,7 +276,7 @@ input {
       outline: 0; }
     .b-testimonial-section .slick-arrow:before, .b-testimonial-section .slick-arrow:after {
       color: rgba(255, 255, 255, 0.2);
-      font-size: 60px;
+      font-size: 100px;
       transition: all 0.4s ease; }
     .b-testimonial-section .slick-arrow:hover:before, .b-testimonial-section .slick-arrow:hover:after {
       color: rgba(255, 255, 255, 0.4);
@@ -533,12 +538,14 @@ input {
   margin-bottom: 15px; }
 
 .b-about-section .e-screenshot {
-  max-width: 90%;
+  max-width: 30%;
   box-shadow: 2px 2px 8px rgba(153, 153, 153, 0.8);
-  padding: 10px; }
+  padding: 10px;
+  margin: 1.5%; }
   @media (max-width: 767px) {
     .b-about-section .e-screenshot {
-      max-width: 100%; } }
+      max-width: 100%;
+      margin: 0 10px; } }
 
 .b-home-features, .b-benefits-list {
   padding: 70px 20px;
