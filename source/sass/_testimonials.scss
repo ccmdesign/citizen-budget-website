@@ -7,7 +7,7 @@
 
     .slick-arrow {
         position: absolute;
-        top: 45%;
+        top: 28%;
         z-index: 1;
         background-color: transparent;
         border: 0;
@@ -19,7 +19,7 @@
         &:before,
         &:after {
             color: $white_20;
-            font-size: 60px;
+            font-size: 100px;
             @include transition;
         }
 
