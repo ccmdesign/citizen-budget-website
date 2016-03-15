@@ -4,12 +4,14 @@
     }
 
     .e-screenshot {
-        max-width: 90%;
+        max-width: 30%;
         box-shadow: 2px 2px 8px lighten($gray, 60);
         padding: 10px;
+        margin: 1.5%;
 
         @include breakpoint($mobile-only) {
             max-width: 100%;
+            margin: 0 10px;
         }
     }
 }
