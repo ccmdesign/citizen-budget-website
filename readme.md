@@ -10,4 +10,8 @@ NPM only manages the Gulp Dependencies. It is not used to manage the front-end d
 
 ## Content
 
+English version
 https://docs.google.com/document/d/1jeCYVUz_a6tiUd7WFjl0taTwOOdUMaNL7C6VXzqeHxI/edit#heading=h.flj2izcfrwcu
+
+French Version
+https://docs.google.com/document/d/1URq4NUUjun8FCPZjdIUMG0LePPeo-kX77GmB-tMsYIc/edit#heading=h.gjdgxs
