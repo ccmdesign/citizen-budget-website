@@ -1,7 +1,7 @@
 .b-top-nav {
     background-color: $blue-30k-95;
     color: white;
-    text-align: center;
+    text-align: right;
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -48,6 +48,7 @@
         letter-spacing: 1px;
         vertical-align: middle;
         background-color: transparent;
+        cursor: pointer;
 
         @include breakpoint($touch) { 
             display: block;
@@ -66,10 +67,14 @@
         font-size: 14px;
         margin-left: 40px;
         color: $white-40;
+
+        &:hover { color: $white; }
     }
     
     .m-open-north { 
         padding: 12px 10px 8px;
+        margin-right: 20px;
+        overflow: hidden;
         
         img { 
             max-height: 30px; 
