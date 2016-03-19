@@ -537,8 +537,11 @@ input {
 .b-about-section p {
   margin-bottom: 15px; }
 
+.b-about-section .e-screenshot-group {
+  text-align: center; }
+
 .b-about-section .e-screenshot {
-  max-width: 30%;
+  max-width: 35%;
   box-shadow: 2px 2px 8px rgba(153, 153, 153, 0.8);
   padding: 10px;
   margin: 1.5%; }
@@ -630,15 +633,15 @@ input {
       display: none; } }
 
 .b-benefits-landing .e-graph {
-  margin: 20px auto 0;
+  margin: 20px auto;
   border-radius: 50%;
   overflow: hidden;
-  width: 55%;
+  width: 25%;
   height: 0;
-  padding-bottom: 55%; }
+  padding-bottom: 25%; }
   @media (min-width: 1025px) {
     .b-benefits-landing .e-graph {
-      margin: 60px auto 0; } }
+      margin: 60px auto 50px; } }
 
 .b-benefits-list p {
   font-family: "Signika", sans-serif;
