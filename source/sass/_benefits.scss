@@ -36,12 +36,12 @@
     }
 
     .e-graph {
-        margin: 20px auto 0;
+        margin: 20px auto;
         @include circle;
-        width: 55%;
+        width: 25%;
         height: 0;
-        padding-bottom: 55%;
-        @include breakpoint($desktop) { margin: 60px auto 0; }
+        padding-bottom: 25%;
+        @include breakpoint($desktop) { margin: 60px auto 50px; }
     }
 }
 
