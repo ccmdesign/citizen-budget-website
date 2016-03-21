@@ -230,6 +230,8 @@ input {
   @media (min-width: 1025px) {
     .b-footer .e-footer-column.m-contact {
       padding-left: 60px; } }
+  .b-footer .e-footer-column.m-contact a {
+    color: white; }
   .b-footer a,
   .b-footer span,
   .b-footer p {
