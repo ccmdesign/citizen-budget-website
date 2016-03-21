@@ -35,6 +35,7 @@
 
     .e-footer-column.m-contact {
         @include breakpoint($desktop) { padding-left: 60px; }
+        a { color: $white; }
     }
 
     a,
