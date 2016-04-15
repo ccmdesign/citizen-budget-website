@@ -564,7 +564,7 @@ input {
     .b-home-features .b-half:nth-of-type(odd), .b-benefits-list .b-half:nth-of-type(odd) {
       padding-right: 80px; } }
   .b-home-features li, .b-benefits-list li {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     color: white;
     font-size: 18px;
     font-weight: 200;
@@ -611,39 +611,6 @@ input {
   @media (min-width: 1025px) {
     .b-benefits-landing h2 {
       margin-top: 60px; } }
-
-.b-benefits-landing .e-tagline {
-  font-size: 22px;
-  text-align: center;
-  margin-bottom: 30px; }
-  @media (min-width: 1025px) {
-    .b-benefits-landing .e-tagline {
-      margin-bottom: 80px; } }
-
-@media (min-width: 1025px) {
-  .b-benefits-landing .m-divider {
-    margin-top: 80px; } }
-
-.b-benefits-landing blockquote {
-  text-align: left;
-  font-size: 32px;
-  color: rgba(0, 0, 0, 0.4);
-  line-height: 1.4;
-  padding: 20px 0 0 40px; }
-  @media (max-width: 767px) {
-    .b-benefits-landing blockquote br {
-      display: none; } }
-
-.b-benefits-landing .e-graph {
-  margin: 20px auto;
-  border-radius: 50%;
-  overflow: hidden;
-  width: 25%;
-  height: 0;
-  padding-bottom: 25%; }
-  @media (min-width: 1025px) {
-    .b-benefits-landing .e-graph {
-      margin: 60px auto 50px; } }
 
 .b-benefits-list p {
   font-family: "Signika", sans-serif;
