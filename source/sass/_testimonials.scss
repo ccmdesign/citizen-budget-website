@@ -13,7 +13,7 @@
         border: 0;
         @include material-icons;
         color: transparent;
-        
+
         &:focus { outline: 0; }
 
         &:before,
@@ -34,9 +34,11 @@
         left: 0;
 
         &:before {
-            
+
             content: 'keyboard_arrow_left'
         }
+
+        @include breakpoint($touch) { display: none !important; }
     }
 
     .slick-next {
@@ -45,12 +47,14 @@
         &:after {
             content: 'keyboard_arrow_right'
         }
+
+        @include breakpoint($touch) { display: none !important; }
     }
 
     .e-testimonial-list {
         padding: 0;
-    }   
-    
+    }
+
     .e-testimonial-item {
         margin: 0;
         color: white;
@@ -78,8 +82,8 @@
             float: right;
             background-size: cover;
 
-            @include breakpoint($mobile-only) { 
-                float: none; 
+            @include breakpoint($mobile-only) {
+                float: none;
                 margin-bottom: 30px;
             }
             @include breakpoint($tablet) { margin-left: 60px; }

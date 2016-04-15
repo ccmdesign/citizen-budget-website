@@ -17,7 +17,7 @@
         opacity: .6;
         display: none;
 
-        @include breakpoint($desktop) { 
+        @include breakpoint($desktop) {
             min-width: 1125px;
             display: block;
         }
@@ -53,7 +53,7 @@
         > .b-button {
             @include breakpoint($mobile-only) {
                 width: 90%;
-                margin-bottom: 10px;
+                margin: 0 auto 10px auto;
             }
 
             @include breakpoint($tablet) {

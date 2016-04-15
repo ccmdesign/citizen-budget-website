@@ -3,7 +3,7 @@
     background-color: $gray;
     color: white;
 
-    @include breakpoint($tablet) { min-height: 740px; }
+    @include breakpoint($touch) { text-align: center; }
     @include breakpoint($desktop) { min-height: auto; }
 
     h2 {
@@ -17,6 +17,8 @@
     h3 {
         margin-bottom: 20px;
         font-weight: 200;
+
+        @include breakpoint($touch) { text-align: center; }
     }
 
     p { font-family: $display-font; }
@@ -26,8 +28,8 @@
     }
 
     .e-footer-column.m-sections {
-    @include breakpoint($mobile-only) { display: none; }   
-    width: 15%; 
+    @include breakpoint($mobile-only) { display: none; }
+    width: 15%;
     }
 
     .e-footer-column.m-about {
@@ -37,8 +39,12 @@
 
     .e-footer-column.m-contact {
         width: 18%;
-        
-        a { color: $white; }
+
+        a {
+            color: $white;
+
+            @include breakpoint($touch) { text-align: center; }
+        }
     }
 
     a,

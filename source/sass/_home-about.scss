@@ -11,7 +11,7 @@
 
         @include breakpoint($mobile-only) {
             max-width: 100%;
-            margin: 0 10px;
+            margin: 10px auto;
         }
     }
 }

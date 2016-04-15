@@ -22,25 +22,38 @@
         background-repeat: no-repeat;
         @include transition;
         box-shadow: 0 0 2px $gray-05;
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-        opacity: .6;
+
+        @include breakpoint($desktop) {
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            opacity: .6;
+        }
+    }
+
+    .e-overview-item {
+        @include breakpoint($touch) {
+            > p {
+                display: none;
+            }
+        }
     }
 
     .e-overview-item.m-active {
         position: relative;
-        
+
         .e-circle {
-            position: relative;
-            z-index: 10;
-            transform: scale(1.2);
-            box-shadow: 0 5px 15px $gray-30;
-            opacity: 1;
-            -webkit-filter: none;
-            filter: none;
+            @include breakpoint($desktop) {
+                position: relative;
+                z-index: 10;
+                transform: scale(1.2);
+                box-shadow: 0 5px 15px $gray-30;
+                opacity: 1;
+                -webkit-filter: none;
+                filter: none;
+            }
         }
 
-        .e-tooltip { 
+        .e-tooltip {
             opacity: 1;
             pointer-events: auto;
         }
@@ -59,14 +72,16 @@
         background-color: $white;
         border: 1px solid $blue;
 
-
-
         h3 {
             margin: 0;
             color: $orange;
             padding-top: 60px;
             padding-bottom: 10px;
-            
+
+            @include breakpoint($touch) {
+                padding-top: 20px;
+            }
+
         }
 
         .e-content {
@@ -95,6 +110,18 @@
             border-bottom: 6px solid transparent;
             position: absolute;
         }
+
+        @include breakpoint($touch) {
+            position: static;
+            z-index: 1;
+            left: 0;
+            width: auto;
+            top: 0;
+            opacity: 1;
+            box-shadow: none;
+            background-color: $white;
+            border: none;
+        }
     }
 
     p {
@@ -105,7 +132,7 @@
         position: relative;
     }
 
-    
+
 
     .b-one-third { margin-bottom: 30px; }
 
@@ -116,13 +143,13 @@
     .m-tracking             { background-image: url(images/icons/tracking.png); }
     .m-support              { background-image: url(images/icons/support.png); }
     .m-responsive           { background-image: url(images/icons/responsive.png); }
-    .m-accessibility        { 
-        background-image: url(images/icons/accessibility.png); 
+    .m-accessibility        {
+        background-image: url(images/icons/accessibility.png);
         background-position: -3px 8px;
     }
 
-    .m-security { 
-        background-image: url(images/icons/security.png); 
+    .m-security {
+        background-image: url(images/icons/security.png);
         background-position: 4px 5px;
     }
 

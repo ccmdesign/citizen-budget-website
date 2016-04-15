@@ -9,10 +9,17 @@
     // overflow: hidden;
     @include transition;
 
-    
+
     &.m-active {
         max-height: 1000px;
         @include transition;
+
+        .e-link {
+            @include breakpoint($touch) {
+                display: block;
+                text-align: center;
+            }
+        }
     }
 
     .e-logo {
@@ -25,17 +32,15 @@
         vertical-align: bottom;
         padding: 15px 15px 15px 25px;
 
-        @include breakpoint($touch) { 
-            display: block; 
-            float: none;
-        }
+        @include breakpoint($touch) { font-size: 24px; }
     }
 
     .e-menu-trigger {
+        display: inline-block;
         padding: 15px;
-        display: block;
         @include transition;
         transition-delay: .7s;
+        line-height: 0;
 
         @include breakpoint($desktop) { display: none; }
     }
@@ -50,8 +55,8 @@
         background-color: transparent;
         cursor: pointer;
 
-        @include breakpoint($touch) { 
-            display: block;
+        @include breakpoint($touch) {
+            display: none;
             padding: 34px 20px;
             border-bottom: 1px solid $white-10;
             background-color: $blue-95;
@@ -70,14 +75,14 @@
 
         &:hover { color: $white; }
     }
-    
-    .m-open-north { 
+
+    .m-open-north {
         padding: 12px 10px 8px;
         margin-right: 20px;
         overflow: hidden;
-        
-        img { 
-            max-height: 30px; 
+
+        img {
+            max-height: 30px;
             opacity: .4;
         }
 
@@ -88,9 +93,13 @@
 
     .e-menu-right {
         float: right;
+
+        @include breakpoint($touch) {
+            display: none;
+        }
     }
 
-    // @include breakpoint($touch) { 
+    // @include breakpoint($touch) {
     //     .e-link:nth-child(2) { transition-delay: .6s;}
     //     .e-link:nth-child(3) { transition-delay: .5s;}
     //     .e-link:nth-child(4) { transition-delay: .4s;}
@@ -101,7 +110,7 @@
 }
 
 .b-top-nav.m-active {
-    .e-menu-trigger { 
+    .e-menu-trigger {
         background-color: $blue-30k;
         @include transition;
         // transition-delay: 0;
@@ -111,7 +120,7 @@
         @include transition;
     }
 
-    // @include breakpoint($touch) { 
+    // @include breakpoint($touch) {
     //     .e-link:nth-child(2) { transition-delay: .1s;}
     //     .e-link:nth-child(3) { transition-delay: .2s;}
     //     .e-link:nth-child(4) { transition-delay: .3s;}
