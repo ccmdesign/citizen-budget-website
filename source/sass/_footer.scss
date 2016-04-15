@@ -26,15 +26,18 @@
     }
 
     .e-footer-column.m-sections {
-    @include breakpoint($mobile-only) { display: none; }    
+    @include breakpoint($mobile-only) { display: none; }   
+    width: 15%; 
     }
 
     .e-footer-column.m-about {
+        width: 42.5%;
     @include breakpoint($desktop) { padding-right: 70px; }
     }
 
     .e-footer-column.m-contact {
-        @include breakpoint($desktop) { padding-left: 60px; }
+        width: 18%;
+        
         a { color: $white; }
     }
 
