@@ -594,14 +594,7 @@ input {
       .b-cities .e-city {
         margin: 0 10px; } }
     .b-cities .e-city > img {
-      width: 100%;
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
-      opacity: .6; }
-    .b-cities .e-city:hover > img {
-      opacity: 1;
-      -webkit-filter: none;
-      filter: none; }
+      width: 100%; }
 
 .b-benefits-landing h2 {
   text-align: center;
