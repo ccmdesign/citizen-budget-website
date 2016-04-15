@@ -1,14 +1,15 @@
 {% extends "_base-fr.html" %}
 
 
-{% block title %}Results{% endblock %}
+{% block title %}Contactez-nous{% endblock %}
 
 {% block content %}
     <div class="b-contact">
         <div class="b-wrapper">
             <h2>Contactez-nous</h2>
+            <h3>1-888-750-4980<br/>info@opennorth.ca</h3>
             <p>Contactez-nous pour découvrir comme Budget Citoyen peut transformer vos consultations budgétaires: nous vous répondrons immédiatement!</p>
-            <form>
+            <form method="POST" action="https://formspree.io/info@opennorth.ca">
                 <input type="text" name="name" placeholder="Name*" required/>
                 <input type="email" name="email" placeholder="Email*" required/>
                 <input type="text" name="phone" placeholder="Phone"/>
