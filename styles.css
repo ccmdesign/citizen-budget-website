@@ -474,24 +474,24 @@ input {
     position: absolute;
     padding: 0;
     z-index: 1;
-    left: -28vh;
-    width: 50vw;
-    top: 70px;
+    left: -17vh;
+    width: 40vw;
+    top: 100px;
     opacity: 0;
     pointer-events: none;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    background-color: #004587; }
+    background-color: white;
+    border: 1px solid #004587; }
     .b-overview .e-tooltip h3 {
       margin: 0;
-      color: white;
-      padding-top: 100px;
-      padding-bottom: 15px;
-      background-color: #00abaf; }
+      color: #eb6354;
+      padding-top: 60px;
+      padding-bottom: 10px; }
     .b-overview .e-tooltip .e-content {
-      padding: 30px; }
+      padding: 0 30px 30px; }
     .b-overview .e-tooltip p {
       text-align: left;
-      color: white;
+      color: #004587;
       font-weight: 100;
       list-style: disc;
       padding-left: 20px; }
@@ -499,22 +499,22 @@ input {
       text-align: center; }
     .b-overview .e-tooltip p:only-child:before {
       display: none; }
+    .b-overview .e-tooltip p:before {
+      content: '';
+      width: 0;
+      height: 0;
+      left: 0;
+      top: 8px;
+      border-left: 6px solid #eb6354;
+      border-top: 6px solid transparent;
+      border-bottom: 6px solid transparent;
+      position: absolute; }
   .b-overview p {
     margin-top: 10px;
     text-align: center;
     font-size: 19px;
     color: #2c3c85;
     position: relative; }
-  .b-overview p:before {
-    content: '';
-    width: 0;
-    height: 0;
-    left: 0;
-    top: 8px;
-    border-left: 6px solid rgba(255, 255, 255, 0.4);
-    border-top: 6px solid transparent;
-    border-bottom: 6px solid transparent;
-    position: absolute; }
   .b-overview .b-one-third {
     margin-bottom: 30px; }
   .b-overview .m-modules {
