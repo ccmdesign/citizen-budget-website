@@ -7,41 +7,6 @@
         font-size: 40px;
         margin: 20px 0 10px;
         @include breakpoint($desktop) { margin-top: 60px; }
-
-    }
-
-    .e-tagline {
-        font-size: 22px;
-        text-align: center;
-        margin-bottom: 30px;
-        @include breakpoint($desktop) { margin-bottom: 80px; }
-    }
-
-    .m-divider {
-        @include breakpoint($desktop) { margin-top: 80px; }
-    }
-
-    blockquote {
-        text-align: left;
-        font-size: 32px;
-        color: $gray-40;
-        line-height: 1.4;
-        padding: 20px 0 0 40px;
-
-        br {
-            @include breakpoint($mobile-only) {
-                display: none;
-            }
-        }
-    }
-
-    .e-graph {
-        margin: 20px auto;
-        @include circle;
-        width: 25%;
-        height: 0;
-        padding-bottom: 25%;
-        @include breakpoint($desktop) { margin: 60px auto 50px; }
     }
 }
 
@@ -49,7 +14,7 @@
 .b-benefits-list {
     @extend .b-home-features;
 
-    p { 
+    p {
         font-family: $display-font;
         margin-bottom: 65px;
         color: white;

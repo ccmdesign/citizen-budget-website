@@ -3,20 +3,20 @@
     background-color: $blue;
 
     .e-section-title { color: white; }
-    
-    h3.e-section-title { 
+
+    h3.e-section-title {
         color: $white;
         font-size: 28px;
     }
 
-    .b-half:nth-of-type(odd) { 
+    .b-half:nth-of-type(odd) {
         @include breakpoint($tablet) {
             padding-right: 80px;
         }
     }
 
     li {
-        margin-bottom: 15px;
+        margin-bottom: 30px;
         color: white;
         font-size: 18px;
         font-weight: 200;
