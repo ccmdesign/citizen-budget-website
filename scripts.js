@@ -22,8 +22,14 @@ $(function() {
 var $overlay = $('#overlay');
 
 $('.js-menu-trigger').click( function() {
-    $('.b-top-nav').addClass('m-active');
-    $overlay.addClass('m-active');
+    if (!$('.b-top-nav').hasClass('m-active')) {
+        $('.b-top-nav').addClass('m-active');
+        $overlay.addClass('m-active');
+
+    } else {
+        $('.b-top-nav').removeClass('m-active');
+        $overlay.removeClass('m-active');
+    }
 });
 
 $('.b-top-nav a').click( function() {
