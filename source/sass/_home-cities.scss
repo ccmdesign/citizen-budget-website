@@ -1,7 +1,7 @@
 .b-cities {
     width: 100%;
     text-align: center;
-    
+
     .e-cities-wrapper {
         text-align: center;
     }
@@ -17,17 +17,8 @@
         }
 
 
-        > img { 
-            width: 100%; 
-            -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
-            opacity: .6;
-        }
-
-        &:hover > img {
-            opacity: 1;
-            -webkit-filter: none;
-            filter: none;
+        > img {
+            width: 100%;
         }
     }
 }
