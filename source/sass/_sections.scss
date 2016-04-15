@@ -13,12 +13,12 @@
         margin-bottom: 20px;
     }
 
-    .e-section-body { 
+    .e-section-body {
         @include breakpoint($mobile-only) {
             margin: 10px 0;
         }
-        
-        margin: 40px 0; 
+
+        margin: 40px 0;
     }
 }
 
@@ -32,7 +32,11 @@
         font-size: 24px;
         font-weight: 100;
         margin-bottom: 50px;
-    }   
+
+        &.m-font-weight-400 {
+            font-weight: 400;
+        }
+    }
 }
 
 .b-results-section {
@@ -40,7 +44,7 @@
 }
 
 .b-benefits-section {
-    @extend .b-page-section;   
+    @extend .b-page-section;
 }
 
 
