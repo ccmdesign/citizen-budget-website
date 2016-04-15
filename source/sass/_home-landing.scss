@@ -30,7 +30,7 @@
 
     h1 {
         text-align: center;
-        font-size: 70px;
+        font-size: 40px;
         font-weight: 300;
         line-height: 1;
     }
@@ -41,23 +41,23 @@
         text-align: center;
         font-weight: 300;
 
-        @include breakpoint($mobile-only) { 
-            font-size: 18px;  
-        
+        @include breakpoint($mobile-only) {
+            font-size: 18px;
+
             br { display: none; }
         }
-        
+
     }
 
     .e-controls {
-        > .b-button { 
-            @include breakpoint($mobile-only) { 
+        > .b-button {
+            @include breakpoint($mobile-only) {
                 width: 90%;
                 margin-bottom: 10px;
             }
 
-            @include breakpoint($tablet) { 
-                width: 240px; 
+            @include breakpoint($tablet) {
+                width: 240px;
                 margin: 20px 10px 0;
             }
         }
