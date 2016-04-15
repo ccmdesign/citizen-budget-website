@@ -221,17 +221,20 @@ input {
     font-family: "Signika", sans-serif; }
   .b-footer .e-footer-column {
     padding-right: 20px; }
-  @media (max-width: 767px) {
-    .b-footer .e-footer-column.m-sections {
-      display: none; } }
-  @media (min-width: 1025px) {
-    .b-footer .e-footer-column.m-about {
-      padding-right: 70px; } }
-  @media (min-width: 1025px) {
-    .b-footer .e-footer-column.m-contact {
-      padding-left: 60px; } }
-  .b-footer .e-footer-column.m-contact a {
-    color: white; }
+  .b-footer .e-footer-column.m-sections {
+    width: 15%; }
+    @media (max-width: 767px) {
+      .b-footer .e-footer-column.m-sections {
+        display: none; } }
+  .b-footer .e-footer-column.m-about {
+    width: 42.5%; }
+    @media (min-width: 1025px) {
+      .b-footer .e-footer-column.m-about {
+        padding-right: 70px; } }
+  .b-footer .e-footer-column.m-contact {
+    width: 18%; }
+    .b-footer .e-footer-column.m-contact a {
+      color: white; }
   .b-footer a,
   .b-footer span,
   .b-footer p {
