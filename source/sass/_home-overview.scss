@@ -22,12 +22,9 @@
         background-repeat: no-repeat;
         @include transition;
         box-shadow: 0 0 2px $gray-05;
-
-        // &:hover {
-        //     @include transition;
-        //     transform: scale(1.2);
-        //     box-shadow: 0 0 10px $gray-20;
-        // }
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        opacity: .6;
     }
 
     .e-overview-item.m-active {
@@ -38,6 +35,9 @@
             z-index: 10;
             transform: scale(1.2);
             box-shadow: 0 5px 15px $gray-30;
+            opacity: 1;
+            -webkit-filter: none;
+            filter: none;
         }
 
         .e-tooltip { 

@@ -462,14 +462,20 @@ input {
     background-position: center center;
     background-repeat: no-repeat;
     transition: all 0.4s ease;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.05); }
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.05);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: .6; }
   .b-overview .e-overview-item.m-active {
     position: relative; }
     .b-overview .e-overview-item.m-active .e-circle {
       position: relative;
       z-index: 10;
       transform: scale(1.2);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); }
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      opacity: 1;
+      -webkit-filter: none;
+      filter: none; }
     .b-overview .e-overview-item.m-active .e-tooltip {
       opacity: 1;
       pointer-events: auto; }
