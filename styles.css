@@ -508,8 +508,8 @@ input {
     position: absolute;
     padding: 0;
     z-index: 1;
-    left: -17vh;
-    width: 40vw;
+    left: -43px;
+    width: 400px;
     top: 100px;
     opacity: 0;
     pointer-events: none;
