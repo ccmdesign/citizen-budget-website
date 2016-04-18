@@ -8,6 +8,10 @@
         margin: 20px 0 10px;
         @include breakpoint($desktop) { margin-top: 60px; }
     }
+
+    p + p {
+        margin-top: 20px;
+    }
 }
 
 

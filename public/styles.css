@@ -135,16 +135,19 @@ input {
       .b-top-nav .e-menu-trigger {
         display: none; } }
   .b-top-nav .e-link {
+    height: 52px;
     padding: 15px 25px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 200;
     letter-spacing: 1px;
+    line-height: 22px;
     vertical-align: middle;
     background-color: transparent;
     cursor: pointer; }
     @media (max-width: 1024px) {
       .b-top-nav .e-link {
         display: none;
+        height: auto;
         padding: 34px 20px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         background-color: rgba(0, 69, 135, 0.95);
@@ -159,7 +162,7 @@ input {
     .b-top-nav .m-french:hover {
       color: white; }
   .b-top-nav .m-open-north {
-    padding: 12px 10px 8px;
+    padding: 11px 10px 8px;
     margin-right: 20px;
     overflow: hidden; }
     .b-top-nav .m-open-north img {
@@ -208,10 +211,8 @@ input {
 .b-footer {
   padding: 30px 20px 60px;
   background-color: rgba(0, 0, 0, 0.8);
-  color: white; }
-  @media (max-width: 1024px) {
-    .b-footer {
-      text-align: center; } }
+  color: white;
+  text-align: center; }
   @media (min-width: 1025px) {
     .b-footer {
       min-height: auto; } }
@@ -230,7 +231,11 @@ input {
   .b-footer p {
     font-family: "Signika", sans-serif; }
   .b-footer .e-footer-column {
-    padding-right: 20px; }
+    padding: 10px;
+    text-align: left; }
+    @media (max-width: 1024px) {
+      .b-footer .e-footer-column {
+        text-align: center; } }
   .b-footer .e-footer-column.m-sections {
     width: 15%; }
     @media (max-width: 767px) {
@@ -240,9 +245,9 @@ input {
     width: 42.5%; }
     @media (min-width: 1025px) {
       .b-footer .e-footer-column.m-about {
-        padding-right: 70px; } }
+        padding: 10px  35px; } }
   .b-footer .e-footer-column.m-contact {
-    width: 18%; }
+    width: 16%; }
     .b-footer .e-footer-column.m-contact a {
       color: white; }
       @media (max-width: 1024px) {
@@ -655,6 +660,9 @@ input {
   @media (min-width: 1025px) {
     .b-benefits-landing h2 {
       margin-top: 60px; } }
+
+.b-benefits-landing p + p {
+  margin-top: 20px; }
 
 .b-benefits-list p {
   font-family: "Signika", sans-serif;

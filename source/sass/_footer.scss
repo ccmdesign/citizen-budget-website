@@ -2,8 +2,8 @@
     padding: 30px 20px 60px;
     background-color: $gray;
     color: white;
+    text-align: center;
 
-    @include breakpoint($touch) { text-align: center; }
     @include breakpoint($desktop) { min-height: auto; }
 
     h2 {
@@ -24,7 +24,9 @@
     p { font-family: $display-font; }
 
     .e-footer-column {
-        padding-right: 20px;
+        padding: 10px;
+        text-align: left;
+        @include breakpoint($touch) { text-align: center; }
     }
 
     .e-footer-column.m-sections {
@@ -34,11 +36,11 @@
 
     .e-footer-column.m-about {
         width: 42.5%;
-    @include breakpoint($desktop) { padding-right: 70px; }
+    @include breakpoint($desktop) { padding: 10px  35px; }
     }
 
     .e-footer-column.m-contact {
-        width: 18%;
+        width: 16%;
 
         a {
             color: $white;
