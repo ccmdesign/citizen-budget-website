@@ -236,23 +236,26 @@ input {
     @media (max-width: 1024px) {
       .b-footer .e-footer-column {
         text-align: center; } }
-  .b-footer .e-footer-column.m-sections {
-    width: 15%; }
-    @media (max-width: 767px) {
-      .b-footer .e-footer-column.m-sections {
-        display: none; } }
-  .b-footer .e-footer-column.m-about {
-    width: 42.5%; }
+    .b-footer .e-footer-column.m-sections {
+      width: 15%; }
+      @media (max-width: 767px) {
+        .b-footer .e-footer-column.m-sections {
+          display: none; } }
+    .b-footer .e-footer-column.m-about {
+      width: 42.5%; }
+      @media (min-width: 1025px) {
+        .b-footer .e-footer-column.m-about {
+          padding: 10px  35px; } }
+    .b-footer .e-footer-column.m-contact {
+      width: 16%; }
+      .b-footer .e-footer-column.m-contact a {
+        color: white; }
+        @media (max-width: 1024px) {
+          .b-footer .e-footer-column.m-contact a {
+            text-align: center; } }
     @media (min-width: 1025px) {
-      .b-footer .e-footer-column.m-about {
-        padding: 10px  35px; } }
-  .b-footer .e-footer-column.m-contact {
-    width: 16%; }
-    .b-footer .e-footer-column.m-contact a {
-      color: white; }
-      @media (max-width: 1024px) {
-        .b-footer .e-footer-column.m-contact a {
-          text-align: center; } }
+      .b-footer .e-footer-column.m-qc-logo {
+        margin-top: 140px; } }
   .b-footer a,
   .b-footer span,
   .b-footer p {
@@ -262,13 +265,6 @@ input {
     color: gray; }
   .b-footer a:hover {
     color: white; }
-
-.b-sponsor {
-  background-color: #006;
-  padding: 10px;
-  text-align: center; }
-  .b-sponsor img {
-    max-width: 200px; }
 
 .b-testimonial-section {
   padding: 55px 20px 35px;
