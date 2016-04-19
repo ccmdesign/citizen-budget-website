@@ -27,25 +27,29 @@
         padding: 10px;
         text-align: left;
         @include breakpoint($touch) { text-align: center; }
-    }
 
-    .e-footer-column.m-sections {
-    @include breakpoint($mobile-only) { display: none; }
-    width: 15%;
-    }
+        &.m-sections {
+        @include breakpoint($mobile-only) { display: none; }
+        width: 15%;
+        }
 
-    .e-footer-column.m-about {
-        width: 42.5%;
-    @include breakpoint($desktop) { padding: 10px  35px; }
-    }
+        &.m-about {
+            width: 42.5%;
+        @include breakpoint($desktop) { padding: 10px  35px; }
+        }
 
-    .e-footer-column.m-contact {
-        width: 16%;
+        &.m-contact {
+            width: 16%;
 
-        a {
-            color: $white;
+            a {
+                color: $white;
 
-            @include breakpoint($touch) { text-align: center; }
+                @include breakpoint($touch) { text-align: center; }
+            }
+        }
+
+        &.m-qc-logo {
+            @include breakpoint($desktop) { margin-top: 140px; }
         }
     }
 
@@ -59,14 +63,4 @@
     }
 
     a:hover { color: $white; }
-}
-
-.b-sponsor {
-    background-color: #006;
-    padding: 10px;
-    text-align: center;
-
-    img {
-        max-width: 200px;
-    }
 }
