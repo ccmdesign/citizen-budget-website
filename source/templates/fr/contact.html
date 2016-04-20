@@ -9,11 +9,11 @@
             <h2>Contactez-nous</h2>
             <h3>1-888-750-4980<br/>info@opennorth.ca</h3>
             <p>Contactez-nous pour découvrir comment Budget Citoyen peut transformer vos consultations budgétaires: nous vous répondrons immédiatement!</p>
-            <form method="POST" action="https://formspree.io/info@opennorth.ca">
-                <input type="text" name="name" placeholder="Nom*" title="Veuillez remplir ce champ" required/>
-                <input type="email" name="email" placeholder="Courriel*" title="Veuillez remplir ce champ" required/>
+            <form method="POST" action="https://formspree.io/info@opennorth.ca" data-required="Veuillez remplir ce champ">
+                <input type="text" name="name" placeholder="Nom*" required/>
+                <input type="email" name="email" placeholder="Courriel*" required/>
                 <input type="text" name="phone" placeholder="Téléphone"/>
-                <input type="text" name="organization" placeholder="Organisation*" title="Veuillez remplir ce champ" required/>
+                <input type="text" name="organization" placeholder="Organisation*" required/>
                 <textarea name="message" placeholder="Message"></textarea>
                 <input type="submit" class="b-button" value="Envoyer">
             </form>
