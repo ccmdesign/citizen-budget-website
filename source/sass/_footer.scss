@@ -3,6 +3,7 @@
     background-color: $gray;
     color: white;
     text-align: center;
+    position: relative;
 
     @include breakpoint($desktop) { min-height: auto; }
 
@@ -26,16 +27,19 @@
     .e-footer-column {
         padding: 10px;
         text-align: left;
+
         @include breakpoint($touch) { text-align: center; }
 
         &.m-sections {
-        @include breakpoint($mobile-only) { display: none; }
         width: 15%;
+
+        @include breakpoint($mobile-only) { display: none; }
         }
 
         &.m-about {
             width: 42.5%;
-        @include breakpoint($desktop) { padding: 10px  35px; }
+
+            @include breakpoint($desktop) { padding: 10px  35px; }
         }
 
         &.m-contact {
@@ -49,7 +53,11 @@
         }
 
         &.m-qc-logo {
-            @include breakpoint($desktop) { margin-top: 140px; }
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+            @include breakpoint($mobile-only) { width: 100% !important; }
         }
     }
 

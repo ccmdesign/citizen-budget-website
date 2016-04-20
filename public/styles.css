@@ -212,7 +212,8 @@ input {
   padding: 30px 20px 60px;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
   @media (min-width: 1025px) {
     .b-footer {
       min-height: auto; } }
@@ -253,9 +254,13 @@ input {
         @media (max-width: 1024px) {
           .b-footer .e-footer-column.m-contact a {
             text-align: center; } }
-    @media (min-width: 1025px) {
-      .b-footer .e-footer-column.m-qc-logo {
-        margin-top: 140px; } }
+    .b-footer .e-footer-column.m-qc-logo {
+      position: absolute;
+      left: 0;
+      bottom: 0; }
+      @media (max-width: 767px) {
+        .b-footer .e-footer-column.m-qc-logo {
+          width: 100% !important; } }
   .b-footer a,
   .b-footer span,
   .b-footer p {
