@@ -53,9 +53,9 @@ gulp.task('nunjucks', function() {
   // Gets .html and .nunjucks files in pages
   return gulp.src('source/templates/**/[^_]*.+(html|nunjucks)')
   // Adding data to Nunjucks
-  .pipe(data(function() {
-    return require('./source/data/data.json')
-  }))
+  // .pipe(data(function() {
+  //   return require('./source/data/data.json')
+  // }))
   // Renders template with nunjucks
   .pipe(nunjucksRender())
   // output files in app folder
@@ -64,7 +64,6 @@ gulp.task('nunjucks', function() {
       stream: true
     }))
 });
-
 
 gulp.task('watch', ['browserSync', 'sass', 'nunjucks', 'image-dev', 'vendor', 'js-dev'], function (){
   gulp.watch('source/sass/**/*.scss', ['sass']);
