@@ -23,7 +23,6 @@
     }
 
     form {
-
         padding: 0;
         margin: 50px auto;
         font-family: "Signika", sans-serif;
@@ -59,8 +58,6 @@
         float: right;
     }
 
-
-
     textarea:focus, input:focus{
         outline: 0;
     }
@@ -88,5 +85,4 @@
         color: $blue;
         font-family: "Signika", sans-serif;
     }
-
 }

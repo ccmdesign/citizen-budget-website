@@ -9,7 +9,6 @@
     // overflow: hidden;
     @include transition;
 
-
     &.m-active {
         max-height: 1000px;
         @include transition;
@@ -118,6 +117,7 @@
         @include transition;
         // transition-delay: 0;
     }
+
     .e-link {
         top: 0;
         @include transition;

@@ -9,7 +9,7 @@
         font-size: 20px;
         font-weight: 200;
 
-        @include breakpoint($tablet) { 
+        @include breakpoint($tablet) {
             font-size: 30px;
         }
     }
@@ -19,7 +19,7 @@
         font-weight: 200;
         margin: 0;
 
-        @include breakpoint($tablet) { 
+        @include breakpoint($tablet) {
             font-size: 28px;
         }
     }

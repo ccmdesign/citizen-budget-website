@@ -24,7 +24,7 @@ blockquote {
     line-height: 1.5;
 }
 
-p { 
+p {
     font-family: $text-font;
     line-height: 1.6;
 }
@@ -40,12 +40,10 @@ li {
     list-style-type: none;
 }
 
-input { 
-    -webkit-appearance: none; 
-    border-radius: 0; 
+input {
+    -webkit-appearance: none;
+    border-radius: 0;
 }
-
-
 
 .b-wrapper {
   max-width: 960px;
