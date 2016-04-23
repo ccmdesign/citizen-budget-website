@@ -1,4 +1,4 @@
-# Citizen Budget Website - Alpha
+# Citizen Budget Website
 
 ## Getting Started
 
